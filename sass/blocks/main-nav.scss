@@ -1,5 +1,14 @@
 .main-nav {
   color: $page-header-color;
+  line-height: 32px;
+  font-weight: $font-weight-bold;
+
+  &--closed {
+    margin-left: 155px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+  }
 
   &--closed .main-nav__list {
     display: none;
@@ -14,6 +23,7 @@
   }
 }
 
-.main-nav__toggle {
-
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }

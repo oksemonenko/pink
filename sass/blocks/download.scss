@@ -1,0 +1,16 @@
+.download {
+  padding-top: 28px;
+  padding-bottom: 35px;
+  color: $page-header-color;
+  background-color: $main-nav-bg;
+}
+
+.download__link {
+  line-height: 18px;
+  text-decoration: none;
+  color: $page-header-color;
+}
+
+.download__info {
+  font-size: $font-size-small;
+}

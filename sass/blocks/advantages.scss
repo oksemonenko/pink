@@ -1,0 +1,24 @@
+.advantages {
+
+}
+
+.advantages__question,
+.advantages__answer {
+  font-size: $font-size-big;
+  font-weight: $font-weight-light;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  background: $sections-bg;
+}
+
+.advantages__item-title {
+  line-height: 24px;
+  font-weight: $font-weight-bold;
+}
+
+.advantages__promo-image {
+  background: $sections-bg;
+}
