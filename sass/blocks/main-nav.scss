@@ -1,7 +1,8 @@
 .main-nav {
-  color: $page-header-color;
   line-height: 32px;
   font-weight: $font-weight-bold;
+  color: $page-header-color;
+  background: $main-nav-bg;
 
   &--closed {
     margin-left: 155px;
@@ -23,7 +24,21 @@
   }
 }
 
+.main-nav__toggle {
+  background: url('../../img/icon-menu-cross.svg') no-repeat;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
+}
+
+.main-nav__item a {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: $font-size-normal;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $page-header-color;
 }
