@@ -8,6 +8,7 @@ $body-color: #283645;
 $page-header-color: #ffffff;
 $headers-color: #000000;
 $footer-info-color: #d22856;
+$button-disabled-color: rgba($body-color, 0.1);
 
 $font-family: 'OpenSans', 'Arial', sans-serif;
 
@@ -18,3 +19,4 @@ $font-weight-light: 300;
 $font-size-normal: 18px;
 $font-size-big: 24px;
 $font-size-small: 14px;
+$font-size-super-small: 12px;
