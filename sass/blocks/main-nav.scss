@@ -18,14 +18,14 @@
   &--closed .main-nav__toggle {
     width: 50px;
     height: 24px;
-    background: $page-header-min-bg url('../../img/icon-menu-burger.svg') no-repeat;
+    background: $page-header-min-bg url('../img/icon-menu-burger.svg') no-repeat;
     border: none;
     font-size: 0;
   }
 }
 
 .main-nav__toggle {
-  background: url('../../img/icon-menu-cross.svg') no-repeat;
+  background: url('../img/icon-menu-cross.svg') no-repeat;
 }
 
 .main-nav__list {
