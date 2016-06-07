@@ -3,25 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Pink: Form</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
   <header class="page-header">
     <h1 class="visually-hidden">Pink</h1>
-    <div class="page-header__logo">
-      <a href="index.html">
-        <img src="http://placehold.it/150x100" width="75" height="22" alt="Pink">
-      </a>
-    </div>
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <a class="page-header-logo" href="index.html">
+      <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+    </a>
+    <nav class="main-nav  main-nav--closed">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item "><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a>Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item "><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item  main-nav__item--active"><a>Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+      </ul>
     </nav>
   </header>
   <main class="contest">
@@ -33,11 +30,11 @@
     <form class="contest-form">
       <fieldset class="contest-form__personality">
         <legend class="visually-hidden">Персональные данные</legend>
-        <label for="surname">Фамилия</label>
+        <label for="surname">Фамилия:</label>
         <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
-        <label for="surname">Имя</label>
+        <label for="surname">Имя:</label>
         <input class="contest-form__text" type="text" id="name" placeholder="Введите ваше имя">
-        <label for="surname">Отчество</label>
+        <label for="surname">Отчество:</label>
         <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
       </fieldset>
       <fieldset class="contest-form__achievements">
@@ -56,7 +53,7 @@
         <label for="hotel">Разгромил отель</label>
       </fieldset>
       <fieldset class="contest-form__contacts">
-        <legend>Контактные данные</legend>
+        <legend class="visually-hidden">Контактные данные</legend>
         <label for="telephone">Номерок телефончика</label>
         <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
         <label for="telephone">Адресок почты</label>
@@ -72,16 +69,16 @@
         <label for="windows">Windows Phone</label>
       </fieldset>
       <fieldset class="contest-form__emotions">
-        <legend>Ваши впечатления</legend>
+        <legend class="visually-hidden">Ваши впечатления</legend>
         <label for="emotions">Опишите свои эмоции</label>
         <textarea class="contest-form__textarea" name="emotions" id="emotions" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <input type="submit" value="Отправить форму">
+      <input class="contest-form__btn" type="submit" value="Отправить форму">
       <p class="contest-form__note"><sup>*</sup> — обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer  page-footer--inner-page">
-    <img src="http://placehold.it/150x100" width="147" height="40" alt="Pink">
+    <img class="page-footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
     <p class="page-footer__social">
 				<span class="social-links">
 					<a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>

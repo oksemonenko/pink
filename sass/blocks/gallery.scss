@@ -1,0 +1,17 @@
+.gallery {
+  padding-top: 35px;
+}
+
+.gallery__title {
+  margin-bottom: 85px;
+  font-size: $font-size-big;
+  font-weight: $font-weight-light;
+  color: $page-header-color;
+}
+
+.gallery__description {
+  margin: 0;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background: $body-bg;
+}

@@ -1,0 +1,68 @@
+.contest-form {
+  margin: 0;
+  margin-bottom: 20px;
+  background: $body-bg;
+}
+
+.contest-form input,
+.contest-form label {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contest-form legend {
+  padding-top: 100px;
+  margin-bottom: 40px;
+  font-size: $font-size-small;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $footer-info-color;
+}
+
+.contest-form fieldset {
+  border: none;
+}
+
+.contest-form__personality label,
+.contest-form__contacts label,
+.contest-form__emotions label {
+  font-size: $font-size-small;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $footer-info-color;
+}
+
+.contest-form__emotions label {
+  margin-top: 59px;
+  margin-bottom: 20px;
+}
+
+.contest-form__achievements,
+.contest-form__app {
+  padding-bottom: 50px;
+  background: $sections-bg;
+}
+
+.contest-form__contacts {
+  padding-top: 38px;
+}
+
+.contest-form__btn {
+  font-weight: $font-weight-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $page-header-color;
+  background: $button-bg;
+  border: none;
+}
+
+.contest-form__note {
+  font-size: $font-size-small;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__note sup {
+  color: $footer-info-color;
+}

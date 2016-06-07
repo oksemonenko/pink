@@ -1,0 +1,32 @@
+.app-versions {
+  padding-top: 65px;
+  padding-bottom: 48px;
+  background: $sections-bg;
+}
+
+.app-versions__list,
+.app-versions__item-options {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-versions__item-name,
+.app-versions__item-price {
+  margin: 0;
+  padding: 0;
+  color: $page-header-color;
+  background: $main-nav-bg;
+  text-transform: uppercase;
+}
+
+.app-versions__item-price {
+  font-size: $font-size-big;
+  line-height: 30px;
+}
+
+.app-versions__item-option {
+  font-size: $font-size-small;
+  line-height: 30px;
+  text-transform: uppercase;
+}

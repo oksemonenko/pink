@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Pink</h1>
-      <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="75" height="22" alt="Pink">
-      </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <a class="page-header-logo">
+        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+      </a>
+      <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -27,11 +26,11 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
         <a class="download__link  btn" href="#">Скачать приложение</a>
         <p class="download__devices">
-             <span class="devices-links">
+             <div class="devices-links">
                <a class="device-link  device-link--iphone" href="#">Для iPhone</a>
                <a class="device-link  device-link--android" href="#">Для Android</a>
                <a class="device-link  device-link--windows-phone" href="#">Для Windows Phone</a>
-             </span>
+             </div>
         </p>
         <p class="download__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -56,7 +55,7 @@
           </li>
         </ul>
         <div class="advantages__promo-image">
-          <img src="http://placehold.it/150x100" width="157" height="320" alt="Пример работы приложения Pink">
+          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример работы приложения Pink">
         </div>
       </section>
       <section class="reviews">
@@ -88,7 +87,7 @@
           <ul class="app-versions__list">
             <li class="app-versions__item">
               <h3 class="app-versions__item-name">Стандарт</h3>
-              <span class="app-versions__item-price">3,99 USD</span>
+              <div class="app-versions__item-price">3,99 USD</div>
               <ul class="app-versions__item-options">
                 <li class="app-versions__item-option">Розовый фильтр</li>
                 <li class="app-versions__item-option">Смайлики</li>
@@ -124,7 +123,7 @@
           </p>
         </div>
         <div class="map">
-          <img src="http://placehold.it/150x100" width="320" height="200" alt="Карта проезда">
+          <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта проезда">
         </div>
       </div>
     </footer>
