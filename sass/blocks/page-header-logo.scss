@@ -1,0 +1,11 @@
+.page-header-logo {
+  width: 75px;
+  height: 22px;
+}
+
+@media #{$tablet-width} {
+  .page-header-logo {
+    width: 147px;
+    height: 40px;
+  }
+}

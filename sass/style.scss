@@ -1,8 +1,9 @@
 @import "normalize/import-now";
 
 @import "variables";
+@import "mixins";
 
-@import "global/body";
+@import "global/scaffolding";
 @import "global/fonts";
 
 @import "blocks/page-header";

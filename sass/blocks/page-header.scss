@@ -1,6 +1,19 @@
 .page-header {
+  min-height: 325px;
   padding: 22px 20px;
   margin-top: 5px;
   color: $page-header-color;
   background: $page-header-min-bg;
+}
+
+@media #{$tablet-width} {
+  .page-header {
+    min-height: 365px;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-header {
+    min-height: 110px;
+  }
 }
