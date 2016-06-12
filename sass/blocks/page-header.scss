@@ -1,9 +1,14 @@
 .page-header {
-  min-height: 325px;
+  min-height: 22px;
   padding: 22px 20px;
+  padding-bottom: 0;
   margin-top: 5px;
   color: $page-header-color;
   background: $page-header-min-bg;
+}
+
+.page-header__wrapper {
+  @include container;
 }
 
 @media #{$tablet-width} {
