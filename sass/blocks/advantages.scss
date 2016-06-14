@@ -22,3 +22,38 @@
 .advantages__promo-image {
   background: $sections-bg;
 }
+
+.advantages__effect {
+  display: none;
+}
+
+@media #{$tablet-width} {
+  .advantages {
+    @include container;
+    @include clearfix;
+  }
+
+  .advantages__list {
+    float: right;
+    width: 310px;
+    padding-right: 50px;
+  }
+
+  .advantages__promo-image {
+    min-height: 460px;
+  }
+
+  .advantages__effect {
+    display: block;
+    width: 259px;
+    padding-left: 300px;
+    text-align: left;
+  }
+}
+
+@media #{$desktop-width} {
+  .advantages__effect {
+    width: 525px;
+    padding-left: 350px;
+  }
+}
