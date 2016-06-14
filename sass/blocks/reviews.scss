@@ -7,3 +7,36 @@
   font-size: $font-size-small;
   line-height: 30px;
 }
+
+.reviews__author-personality {
+  display: none;
+}
+
+.reviews__controls {
+  display: none;
+}
+
+@media #{$tablet-width} {
+  .reviews__author-personality {
+    display: block;
+  }
+}
+
+@media #{$desktop-width} {
+  .reviews__item {
+    display: inline-block;
+    width: 677px;
+  }
+
+  .reviews__controls {
+    display: inline-block;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .slider__input {
+    display: none;
+  }
+}

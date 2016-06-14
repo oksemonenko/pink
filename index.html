@@ -78,11 +78,14 @@
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
           <div class="reviews__list">
+            <button class="reviews__controls  reviews__controls--prew"></button>
             <blockquote class="reviews__item  slider__item">
               <h3 class="reviews__author-name">Николай Петров</h3>
+              <div class="reviews__author-personality">25 лет, водитель трамвая</div>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
+            <button class="reviews__controls  reviews__controls--next"></button>
           </div>
           <div class="reviews__toggles  slider__toggles">
             <label class="slider__toggle" for="reviews-input-1">1</label>
@@ -97,17 +100,49 @@
           <input class="slider__input" type="radio" name="app-versions" id="app-versions-input-1">
           <input class="slider__input" type="radio" name="app-versions" id="app-versions-input-2" checked>
           <input class="slider__input" type="radio" name="app-versions" id="app-versions-input-3">
-          <ul class="app-versions__list">
-            <li class="app-versions__item">
-              <h3 class="app-versions__item-name">Стандарт</h3>
-              <div class="app-versions__item-price">3,99 USD</div>
-              <ul class="app-versions__item-options">
-                <li class="app-versions__item-option">Розовый фильтр</li>
-                <li class="app-versions__item-option">Смайлики</li>
-                <li class="app-versions__item-option">Комментарии</li>
-              </ul>
-            </li>
-          </ul>
+          <!--<ul class="app-versions__list">-->
+            <!--<li class="app-versions__item">-->
+              <!--<h3 class="app-versions__item-name">Стандарт</h3>-->
+              <!--<div class="app-versions__item-price">3,99 USD</div>-->
+              <!--<ul class="app-versions__item-options">-->
+                <!--<li class="app-versions__item-option">Розовый фильтр</li>-->
+                <!--<li class="app-versions__item-option">Смайлики</li>-->
+                <!--<li class="app-versions__item-option">Комментарии</li>-->
+              <!--</ul>-->
+            <!--</li>-->
+          <!--</ul>-->
+          <table class="app-versions__list">
+            <tr>
+              <td></td>
+              <td class="app-versions__item-name">База
+                <div class="app-versions__item-price">1,99 USD</div>
+              </td>
+              <td class="app-versions__item-name">Стандарт
+                <div class="app-versions__item-price">3,99 USD</div>
+              </td>
+              <td class="app-versions__item-name">Анлим
+                <div class="app-versions__item-price">9,99 USD</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="app-versions__item-option">Розовый фильтр</td>
+              <td>Да</td>
+              <td>Да</td>
+              <td>Да</td>
+            </tr>
+            <tr>
+              <td class="app-versions__item-option">Смайлики</td>
+              <td>Нет</td>
+              <td>Да</td>
+              <td>Да</td>
+            </tr>
+            <tr>
+              <td class="app-versions__item-option">Комментарии</td>
+              <td>Нет</td>
+              <td>Нет</td>
+              <td>Да</td>
+            </tr>
+          </table>
           <div class="app-versions__toggles  slider__toggles">
             <label class="slider__toggle" for="app-versions-input-1">1</label>
             <label class="slider__toggle" for="app-versions-input-2">2</label>

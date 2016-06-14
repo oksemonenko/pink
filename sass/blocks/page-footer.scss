@@ -25,3 +25,24 @@
 .page-footer__copyright {
   margin-bottom: 0;
 }
+
+@media #{$tablet-width} {
+  .page-footer__contact {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .page-footer__contact b {
+    display: block;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-footer__contact {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
