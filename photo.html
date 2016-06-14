@@ -3,119 +3,123 @@
   <head>
     <meta charset="utf-8">
     <title>Pink: Photo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-  <header class="page-header">
-    <h1 class="visually-hidden">Pink</h1>
-    <a class="page-header-logo" href="index.html">
-      <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-    </a>
-    <nav class="main-nav  main-nav--closed">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item "><a href="index.html">Главная</a></li>
-        <li class="main-nav__item  main-nav__item--active"><a>Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="gallery">
-      <h2 class="gallery__title">Фотографии пользователей</h2>
-      <p class="gallery__description">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </p>
-      <figure class="photo">
-        <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Прыгать или нет?">
-        <div class="photo__description">
-          <div class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></div>
-          <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите
-            прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">
-        <div class="photo__description">
-          <div class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></div>
-          <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">356</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">
-        <div class="photo__description">
-          <div class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></div>
-          <p class="photo__comment">Соседи будут рады!</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">666</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Здесь могла быть ваша цитата">
-        <div class="photo__description">
-          <div class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></div>
-          <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Самая кубанская в мире!">
-        <div class="photo__description">
-          <div class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></div>
-          <p class="photo__comment">Самая кубанская в мире!</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">4</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
-        <div class="photo__description">
-          <div class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></div>
-          <p class="photo__comment">Где снег-то?</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">150</span></div>
-        </div>
-      </figure>
-      <figure class="photo">
-        <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Всем GM и взаимные лайки!">
-        <div class="photo__description">
-          <div class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></div>
-          <p class="photo__comment">Всем GM и взаимные лайки!</p>
-          <div class="photo__likes">Нравится: <span class="photo__likes-count">2560</span></div>
-        </div>
-      </figure>
-    </section>
-    <section class="publish-photo">
-      <h2 class="visually-hidden">Опубликовать свое фото</h2>
-      <p class="publish-photo__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      <div class="publish-photo__editor">
-        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
-        <div class="publish-photo__editor-tools">
-          <button class="publish-photo__crop-photo" type="button">Обрезать</button>
-          <button class="publish-photo__change-colour-photo">Изменить цвет</button>
-          <button class="publish-photo__brightness-photo">Яркость</button>
-          <div class="publish-photo__toggle"></div>
-        </div>
-        <a class="publish-photo__post" href="#">Запостить</a>
-        <a class="publish-photo__cancel">Отмена</a>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="visually-hidden">Pink</h1>
+        <a class="page-header-logo" href="index.html">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+        </a>
+        <nav class="main-nav  main-nav--closed">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item "><a href="index.html">Главная</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a>Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-  </main>
-  <footer class="page-footer  page-footer--inner-page">
-    <img class="page-footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
-    <p class="page-footer__social">
-				<span class="social-links">
-					<a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
-					<a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
-					<a class="social-link  social-link--youtube" href="#">Мы в YouTube</a>
-				</span>
-    </p>
-    <p class="page-footer__copyright">
-      Разработано
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-    </p>
-  </footer>
+    </header>
+    <main>
+      <section class="gallery">
+        <h2 class="gallery__title">Фотографии пользователей</h2>
+        <p class="gallery__description">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+        <figure class="photo  photo--panorama">
+          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Прыгать или нет?">
+          <div class="photo__description  photo__description--panorama">
+            <div class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></div>
+            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите
+              прямую транслацию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">
+          <div class="photo__description">
+            <div class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></div>
+            <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">356</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">
+          <div class="photo__description">
+            <div class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></div>
+            <p class="photo__comment">Соседи будут рады!</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">666</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Здесь могла быть ваша цитата">
+          <div class="photo__description">
+            <div class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></div>
+            <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Самая кубанская в мире!">
+          <div class="photo__description">
+            <div class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></div>
+            <p class="photo__comment">Самая кубанская в мире!</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">4</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
+          <div class="photo__description">
+            <div class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></div>
+            <p class="photo__comment">Где снег-то?</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">150</span></div>
+          </div>
+        </figure>
+        <figure class="photo">
+          <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Всем GM и взаимные лайки!">
+          <div class="photo__description">
+            <div class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></div>
+            <p class="photo__comment">Всем GM и взаимные лайки!</p>
+            <div class="photo__likes">Нравится: <span class="photo__likes-count">2560</span></div>
+          </div>
+        </figure>
+      </section>
+      <section class="publish-photo">
+        <h2 class="visually-hidden">Опубликовать свое фото</h2>
+        <p class="publish-photo__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="publish-photo__editor">
+          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+          <div class="publish-photo__editor-tools">
+            <button class="publish-photo__crop-photo" type="button">Обрезать</button>
+            <button class="publish-photo__change-colour-photo">Изменить цвет</button>
+            <button class="publish-photo__brightness-photo">Яркость</button>
+            <div class="publish-photo__toggle"></div>
+          </div>
+          <a class="publish-photo__post" href="#">Запостить</a>
+          <a class="publish-photo__cancel">Отмена</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer  page-footer--inner-page">
+      <img class="page-footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
+      <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
+            <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--youtube" href="#">Мы в YouTube</a>
+          </span>
+      </p>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
 

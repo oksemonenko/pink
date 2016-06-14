@@ -101,7 +101,7 @@
   .main-nav {
     float: right;
     width: auto;
-    background: $page-header-min-bg;
+    background: transparent;
   }
 
   .main-nav__wrapper {
@@ -116,6 +116,7 @@
   .main-nav__item {
     float: left;
     margin-right: 70px;
+    box-shadow: none;
 
     &:last-child {
       margin-right: 0;

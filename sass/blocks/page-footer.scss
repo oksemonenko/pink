@@ -38,6 +38,14 @@
   .page-footer__contact b {
     display: block;
   }
+
+  .page-footer__social {
+    display: inline-block;
+  }
+
+  .page-footer__copyright {
+    display: inline-block;
+  }
 }
 
 @media #{$desktop-width} {
