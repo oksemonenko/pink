@@ -10,5 +10,13 @@
   .page-header-logo {
     width: 147px;
     height: 40px;
+    margin-right: 350px;
+    padding-bottom: 0;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-header-logo {
+    margin-right: 0;
   }
 }

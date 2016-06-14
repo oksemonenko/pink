@@ -1,5 +1,10 @@
 .download {
   margin-top: 380px;
+}
+
+.download__wrapper {
+  @include container;
+  min-height: 200px;
   padding-left: 19px;
   padding-right: 19px;
   padding-top: 28px;
@@ -16,4 +21,29 @@
 
 .download__info {
   font-size: $font-size-small;
+}
+
+@media #{$tablet-width} {
+  .download {
+    @include container;
+    @include clearfix;
+    margin-top: 0;
+  }
+
+  .download__wrapper {
+    float: left;
+    margin-left: 15px;
+    padding: 0;
+    width: 300px;
+    min-height: 400px;
+    background-color: transparent;
+  }
+}
+
+@media #{$desktop-width} {
+  .download__wrapper {
+    min-height: 500px;
+    margin-left: 10px;
+
+  }
 }
