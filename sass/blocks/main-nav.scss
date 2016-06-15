@@ -24,7 +24,8 @@
   }
 
   &--opened {
-    width: 320px;
+    position: absolute;
+    min-width: 320px;
   }
 
   &--opened .main-nav__toggle {
@@ -48,6 +49,7 @@
 }
 
 .main-nav__list {
+  width: auto;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -87,10 +89,9 @@
     width: auto;
   }
 
-  //.main-nav__wrapper {
-  //  @include container;
-  //  @include clearfix;
-  //}
+  .main-nav--opened .main-nav__list {
+    min-width: 700px;
+  }
 
   .main-nav--closed .main-nav__toggle {
     right: 0;
@@ -104,9 +105,12 @@
     background: transparent;
   }
 
-  .main-nav__wrapper {
-    //@include container();
-    //@include clearfix();
+  .main-nav--opened {
+    position: static;
+  }
+
+  .main-nav--opened .main-nav__list {
+    width: auto;
   }
 
   .main-nav__toggle {
