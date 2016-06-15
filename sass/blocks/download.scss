@@ -13,6 +13,10 @@
   background-color: $main-nav-bg;
 }
 
+.download__title {
+  display: none;
+}
+
 .download__link {
   line-height: 18px;
   text-decoration: none;
@@ -44,6 +48,13 @@
   .download__wrapper {
     min-height: 500px;
     margin-left: 10px;
+  }
 
+  .download__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: $font-size-super-big;
+    font-weight: $font-weight-light;
   }
 }
