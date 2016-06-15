@@ -19,6 +19,10 @@
   background: $body-bg;
 }
 
+.contest__conditions-request {
+  display: none;
+}
+
 @media #{$tablet-width} {
   .contest {
     @include container;
@@ -33,7 +37,23 @@
   }
 
   .contest__conditions {
+    width: 487px;
     padding-top: 100px;
     padding-bottom: 80px;
+    margin: 0 auto;
+  }
+
+  .contest__conditions-request {
+    display: inline;
+  }
+}
+
+@media #{$desktop-width} {
+  .contest__title {
+    width: 739px;
+  }
+
+  .contest__conditions {
+    width: 752px;
   }
 }
