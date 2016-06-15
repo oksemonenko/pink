@@ -1,8 +1,9 @@
 .contest {
-  padding-top: 35px;
+  padding-top: 60px;
 }
 
 .contest__title {
+  margin: 0;
   margin-bottom: 85px;
   font-size: $font-size-big;
   font-weight: $font-weight-light;
@@ -16,4 +17,23 @@
   font-size: $font-size-small;
   line-height: 30px;
   background: $body-bg;
+}
+
+@media #{$tablet-width} {
+  .contest {
+    @include container;
+    padding-top: 80px;
+  }
+  .contest__title {
+    width: 480px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-size: $font-size-super-big;
+    font-weight: $font-weight-light;
+  }
+
+  .contest__conditions {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
 }

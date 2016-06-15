@@ -42,6 +42,7 @@
 .contest-form__app {
   padding-bottom: 50px;
   background: $sections-bg;
+  text-align: left;
 }
 
 .contest-form__contacts {
@@ -49,6 +50,7 @@
 }
 
 .contest-form__btn {
+  margin-bottom: 40px;
   font-weight: $font-weight-bold;
   line-height: 30px;
   text-transform: uppercase;
@@ -66,3 +68,120 @@
 .contest-form__note sup {
   color: $footer-info-color;
 }
+
+.contest-form__personality input,
+.contest-form__contacts input {
+  margin-bottom: 20px;
+}
+
+.contest-form__achievements label,
+.contest-form__app label {
+  margin-bottom: 30px;
+}
+
+.contest-form__personality input:last-child,
+.contest-form__contacts input:last-child {
+  margin-bottom: 0;
+}
+
+.contest-form__achievements label:last-child,
+.contest-form__app label:last-child {
+  margin-bottom: 0;
+}
+
+.contest-form__textarea {
+  margin-bottom: 40px;
+}
+
+@media #{$tablet-width} {
+  .contest-form {
+    @include clearfix;
+  }
+
+  .contest-form fieldset {
+    margin-bottom: 60px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .contest-form fieldset:nth-of-type(1) {
+    border: none;
+  }
+
+  .contest-form legend {
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .contest-form__achievements,
+  .contest-form__app {
+    background: $body-bg;
+  }
+
+  .contest-form__personality {
+    position: relative;
+  }
+
+  .contest-form__personality input {
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+
+  .contest-form__personality label {
+    position: absolute;
+  }
+
+  .contest-form__personality label {
+    margin-right: 15px;
+  }
+
+  .contest-form__text:nth-of-type(1) {
+    width: 500px;
+  }
+
+  .contest-form__text:nth-of-type(2) {
+    width: 540px;
+  }
+
+  .contest-form__text:nth-of-type(3) {
+    width: 500px;
+  }
+
+  .contest-form__contacts {
+    position: relative;
+  }
+
+  .contest-form__contacts label {
+    position: absolute;
+    top: 165px;
+    left: 80px;
+  }
+
+  .contest-form__contacts label:nth-of-type(2) {
+    position: absolute;
+    top: 75px;
+    left: 80px;
+  }
+
+  .contest-form__contacts input {
+    width: 496px;
+    margin-bottom: 60px;
+  }
+
+  .contest-form__contacts input:last-child {
+    margin-bottom: 60px;
+  }
+
+  .contest-form__textarea {
+    width: 496px;
+  }
+
+  .contest-form__btn {
+    float: left;
+  }
+
+  .contest-form__note {
+    float: right;
+  }
+}
+
