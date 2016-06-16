@@ -35,5 +35,28 @@
 }
 
 .photo__likes {
-  color: $footer-info-color;;
+  color: $footer-info-color;
+}
+
+@media #{$tablet-width} {
+  .photo {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+
+  .photo--panorama {
+    @include container;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .photo__description--panorama {
+    width: 620px;
+  }
+
+  .photo__description {
+    min-height: 155px;
+  }
 }

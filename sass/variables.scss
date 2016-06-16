@@ -19,5 +19,10 @@ $font-weight-light: 300;
 
 $font-size-normal: 18px;
 $font-size-big: 24px;
+$font-size-super-big: 50px;
 $font-size-small: 14px;
 $font-size-super-small: 12px;
+
+$mobile-tablet-width: '(max-width: 959px)';
+$tablet-width: '(min-width: 660px)';
+$desktop-width: '(min-width: 960px)';

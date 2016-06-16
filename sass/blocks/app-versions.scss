@@ -4,11 +4,15 @@
   background: $sections-bg;
 }
 
-.app-versions__list,
-.app-versions__item-options {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+//.app-versions__list,
+//.app-versions__item-options {
+//  margin: 0;
+//  padding: 0;
+//  list-style: none;
+//}
+
+.app-versions__list {
+  margin: 0 auto;
 }
 
 .app-versions__item-name,
@@ -29,4 +33,10 @@
   font-size: $font-size-small;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+@media #{$tablet-width} {
+  .app-versions__toggles {
+    display: none;
+  }
 }

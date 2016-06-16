@@ -41,3 +41,27 @@
 .publish-photo__cancel {
   color: $button-disabled-color;
 }
+
+@media #{$tablet-width} {
+  .publish-photo {
+    @include container;
+  }
+
+  .publish-photo__editor {
+    @include clearfix;
+  }
+
+  .publish-photo__editor img {
+    float: left;
+  }
+
+  .publish-photo__editor-tools button {
+    display: block;
+  }
+}
+
+@media #{$desktop-width} {
+  .publish-photo__editor a {
+    display: inline-block;
+  }
+}

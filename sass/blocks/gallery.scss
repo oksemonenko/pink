@@ -3,6 +3,7 @@
 }
 
 .gallery__title {
+  margin: 0;
   margin-bottom: 85px;
   font-size: $font-size-big;
   font-weight: $font-weight-light;
@@ -14,4 +15,30 @@
   padding-top: 54px;
   padding-bottom: 54px;
   background: $body-bg;
+}
+
+@media #{$tablet-width} {
+  .gallery {
+    @include container;
+    padding-top: 90px;
+  }
+
+  .gallery__title {
+    width: 348px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    font-size: $font-size-super-big;
+    font-weight: $font-weight-light;
+  }
+
+  .gallery__description {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+}
+
+@media #{$desktop-width} {
+  .gallery__title {
+    margin-bottom: 100px;
+  }
 }

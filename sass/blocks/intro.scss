@@ -1,0 +1,23 @@
+.intro {
+  min-height: 485px;
+  padding-top: 5px;
+  background-color: $main-nav-bg;
+  background-image: url('../img/bg-back-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media #{$tablet-width} {
+  .intro {
+    min-height: 729px;
+    padding-top: 0;
+    background-image: url('../img/bg-back-tablet.png');
+  }
+}
+
+@media #{$desktop-width} {
+  .intro {
+    min-height: 854px;
+    background-image: url('../img/bg-back-desktop.png');
+  }
+}

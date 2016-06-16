@@ -1,6 +1,21 @@
 .page-header {
+  min-height: 22px;
   padding: 22px 20px;
+  padding-bottom: 0;
   margin-top: 5px;
   color: $page-header-color;
   background: $page-header-min-bg;
+}
+
+.page-header__wrapper {
+  @include container;
+}
+
+@media #{$tablet-width} {
+  .page-header {
+    min-height: 70px;
+    padding: 40px 20px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
 }
