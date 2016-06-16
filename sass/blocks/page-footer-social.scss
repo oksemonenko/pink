@@ -1,0 +1,9 @@
+.page-footer-social {
+  margin-bottom: 40px;
+}
+
+@media #{$tablet-width} {
+  .page-footer-social {
+    display: inline-block;
+  }
+}

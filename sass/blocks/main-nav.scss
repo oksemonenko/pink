@@ -25,7 +25,9 @@
 
   &--opened {
     position: absolute;
-    min-width: 320px;
+    //min-width: 320px;
+    width: 100%;
+    left: 0;
   }
 
   &--opened .main-nav__toggle {
@@ -61,6 +63,7 @@
 }
 
 .main-nav__item a {
+  display: block;
   padding-top: 22px;
   padding-bottom: 22px;
   font-size: $font-size-normal;
@@ -86,7 +89,8 @@
 
 @media #{$tablet-width} {
   .main-nav {
-    width: auto;
+    width: 100%;
+    left: 0;
   }
 
   .main-nav--opened .main-nav__list {
@@ -128,6 +132,8 @@
   }
 
   .main-nav__item a {
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-weight: $font-weight-normal;
     text-transform: none;
   }

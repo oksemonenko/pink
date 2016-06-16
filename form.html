@@ -32,7 +32,7 @@
       </p>
       <form class="contest-form">
         <fieldset class="contest-form__personality">
-          <legend class="visually-hidden">Персональные данные</legend>
+          <legend class="contest-form__title  visually-hidden">Персональные данные</legend>
           <label for="surname">Фамилия:</label>
           <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
           <label for="surname">Имя:</label>
@@ -41,7 +41,7 @@
           <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="contest-form__achievements">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
           <input class="contest-form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
           <label for="selfie">Сделал селфи с акулой</label>
           <input class="contest-form__checkbox" type="checkbox" name="beach" id="beach" checked>
@@ -56,14 +56,14 @@
           <label for="hotel">Разгромил отель</label>
         </fieldset>
         <fieldset class="contest-form__contacts">
-          <legend>Контактная информация</legend>
+          <legend class="contest-form__title">Контактная информация</legend>
           <label for="telephone">Номерок телефончика</label>
           <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
           <label for="telephone">Адресок почты</label>
           <input class="contest-form__email" type="email" id="email" placeholder="E-mail, пожалуйста">
         </fieldset>
         <fieldset class="contest-form__app">
-          <legend>С каким приложением путешествовали?</legend>
+          <legend class="contest-form__title">С каким приложением путешествовали?</legend>
           <input class="contest-form__radio" type="radio" name="app" value="ios" id="ios" checked>
           <label for="ios">Pink для iOS</label>
           <input class="contest-form__radio" type="radio" name="app" value="android" id="android">
@@ -72,7 +72,7 @@
           <label for="windows">Windows Phone</label>
         </fieldset>
         <fieldset class="contest-form__emotions">
-          <legend>Опишите свои эмоции</legend>
+          <legend class="contest-form__title">Опишите свои эмоции</legend>
           <label for="emotions">Опишите свои эмоции</label>
           <textarea class="contest-form__textarea" name="emotions" id="emotions" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
@@ -82,13 +82,11 @@
     </main>
     <footer class="page-footer  page-footer--inner-page">
       <img class="page-footer-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
-      <p class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--tw" href="#">Мы в Твиттере</a>
-            <a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
-            <a class="social-link  social-link--youtube" href="#">Мы в YouTube</a>
-          </span>
-      </p>
+      <span class="page-footer-social">
+          <a class="page-footer-social__link  page-footer-social__link--tw" href="#">Мы в Твиттере</a>
+          <a class="page-footer-social__link  page-footer-social__link--fb" href="#">Мы в Фейсбуке</a>
+          <a class="page-footer-social__link  page-footer-social__link--youtube" href="#">Мы в YouTube</a>
+      </span>
       <p class="page-footer__copyright">
         Разработано
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>

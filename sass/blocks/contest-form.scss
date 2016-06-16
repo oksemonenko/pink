@@ -6,7 +6,7 @@
 
 .contest-form input,
 .contest-form label {
-  display: block;
+  //display: block;
   margin-right: auto;
   margin-left: auto;
 }
@@ -47,7 +47,7 @@
 
 .contest-form__achievements input,
 .contest-form__app input {
-  display: none;
+  //display: none;
 }
 
 .contest-form__contacts {
@@ -67,6 +67,7 @@
   color: $page-header-color;
   background: $button-bg;
   border: none;
+  cursor: pointer;
 }
 
 .contest-form__note {
