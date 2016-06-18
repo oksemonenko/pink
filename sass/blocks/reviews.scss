@@ -3,6 +3,11 @@
   padding-bottom: 65px;
 }
 
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__item p {
   font-size: $font-size-small;
   line-height: 30px;
@@ -17,14 +22,28 @@
 }
 
 @media #{$tablet-width} {
+  .reviews__list {
+    @include container;
+  }
+
+  .reviews__author-name {
+    order: 2;
+  }
+
   .reviews__author-personality {
     display: block;
+    order: 3;
   }
 }
 
 @media #{$desktop-width} {
+  .reviews__list {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
   .reviews__item {
-    display: inline-block;
+    //display: inline-block;
     width: 677px;
   }
 

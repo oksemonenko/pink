@@ -49,6 +49,18 @@
 }
 
 @media #{$desktop-width} {
+  .page-footer__contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .page-footer__contact:nth-child(2) {
+    order: 2;
+  }
+
+  .page-footer__contact:last-child {
+    order: 1;
+  }
   .page-footer__contact {
     padding-left: 40px;
     padding-right: 40px;
