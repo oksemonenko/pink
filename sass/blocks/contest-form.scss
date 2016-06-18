@@ -1,4 +1,6 @@
 .contest-form {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 20px;
   background: $body-bg;
@@ -7,20 +9,25 @@
 .contest-form input,
 .contest-form label {
   //display: block;
-  margin-right: auto;
-  margin-left: auto;
+  //margin-right: auto;
+  //margin-left: auto;
 }
 
-.contest-form legend {
+.contest-form__title {
+  width: 220px;
   padding-top: 100px;
   margin-bottom: 40px;
   font-size: $font-size-small;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: $footer-info-color;
 }
 
 .contest-form fieldset {
+  //@include container-fluid;
+  display: flex;
+  flex-direction: column;
   border: none;
 }
 
@@ -33,6 +40,23 @@
   color: $footer-info-color;
 }
 
+.contest-form__text,
+.contest-form__email,
+.contest-form__tel {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 22px;
+  box-sizing: border-box;
+}
+
+.contest-form__personality label,
+.contest-form__contacts label {
+  margin-left: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
 .contest-form__emotions label {
   margin-top: 59px;
   margin-bottom: 20px;
@@ -42,12 +66,19 @@
 .contest-form__app {
   padding-bottom: 50px;
   background: $sections-bg;
-  text-align: left;
 }
 
 .contest-form__achievements input,
 .contest-form__app input {
   //display: none;
+}
+
+.contest-form__option {
+  margin-bottom: 60px;
+}
+
+.contest-form__option:last-of-type {
+  margin-bottom: 0;
 }
 
 .contest-form__contacts {
@@ -60,7 +91,10 @@
 }
 
 .contest-form__btn {
+  width: 276px;
+  padding: 22px 48px;
   margin-bottom: 40px;
+  align-self: center;
   font-weight: $font-weight-bold;
   line-height: 30px;
   text-transform: uppercase;
@@ -105,7 +139,13 @@
 }
 
 .contest-form__textarea {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 22px;
   margin-bottom: 40px;
+  box-sizing: border-box;
+
 }
 
 @media #{$tablet-width} {
