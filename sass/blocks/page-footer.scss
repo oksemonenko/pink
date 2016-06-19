@@ -46,6 +46,12 @@
   .page-footer__copyright {
     display: inline-block;
   }
+
+  .page-footer--inner-page {
+    @include container-fluid;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media #{$desktop-width} {
