@@ -33,12 +33,18 @@
       <form class="contest-form">
         <fieldset class="contest-form__personality">
           <legend class="contest-form__title  visually-hidden">Персональные данные</legend>
-          <label for="surname">Фамилия:</label>
-          <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
-          <label for="surname">Имя:</label>
-          <input class="contest-form__text" type="text" id="name" placeholder="Введите ваше имя">
-          <label for="surname">Отчество:</label>
-          <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+          <div class="contest-form__question">
+            <label for="surname">Фамилия:</label>
+            <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
+          </div>
+          <div class="contest-form__question">
+            <label for="surname">Имя:</label>
+            <input class="contest-form__text" type="text" id="name" placeholder="Введите ваше имя">
+          </div>
+          <div class="contest-form__question">
+            <label for="surname">Отчество:</label>
+            <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
         <fieldset class="contest-form__achievements">
           <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
@@ -69,10 +75,12 @@
         </fieldset>
         <fieldset class="contest-form__contacts">
           <legend class="contest-form__title">Контактная информация</legend>
-          <label for="telephone">Номерок телефончика</label>
-          <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
-          <label for="telephone">Адресок почты</label>
-          <input class="contest-form__email" type="email" id="email" placeholder="E-mail, пожалуйста">
+          <div class="contest-form__contacts-flex">
+            <label for="telephone">Номерок телефончика</label>
+            <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
+            <label for="telephone">Адресок почты</label>
+            <input class="contest-form__email" type="email" id="email" placeholder="E-mail, пожалуйста">
+          </div>
         </fieldset>
         <fieldset class="contest-form__app">
           <legend class="contest-form__title">С каким приложением путешествовали?</legend>
@@ -94,8 +102,10 @@
           <label for="emotions">Опишите свои эмоции</label>
           <textarea class="contest-form__textarea" name="emotions" id="emotions" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <input class="contest-form__btn" type="submit" value="Отправить форму">
-        <p class="contest-form__note"><sup>*</sup> — обязательные <span class="contest-form__note-text">для заполнения</span> поля</p>
+        <div class="contest-form__controls">
+          <input class="contest-form__btn" type="submit" value="Отправить форму">
+          <p class="contest-form__note"><sup>*</sup> — обязательные <span class="contest-form__note-text">для заполнения</span> поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer  page-footer--inner-page">

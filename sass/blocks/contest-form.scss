@@ -149,10 +149,10 @@
 }
 
 @media #{$tablet-width} {
-  .contest-form {
-    @include clearfix;
-    position: relative;
-  }
+  //.contest-form {
+  //  //@include clearfix;
+  //  //position: relative;
+  //}
 
   .contest-form fieldset {
     margin-bottom: 60px;
@@ -182,153 +182,218 @@
     background: $body-bg;
   }
 
+  .contest-form__question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .contest-form__question:last-child {
+    margin-bottom: 0;
+  }
+
   .contest-form__personality {
-    position: relative;
-    padding-bottom: 340px;
+    padding-bottom: 0;
   }
 
-  .contest-form__personality input {
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 60px;
+  .contest-form__question:nth-of-type(1) .contest-form__text,
+  .contest-form__question:nth-of-type(3) .contest-form__text {
+    width: 80%;
   }
 
-  .contest-form__personality label {
-    position: absolute;
+  .contest-form__question:nth-of-type(2) .contest-form__text {
+    width: 85%;
   }
 
-  .contest-form__personality label {
-    margin-right: 15px;
-  }
-
-  .contest-form__text:nth-of-type(1) {
-    width: 500px;
-  }
-
-  .contest-form__text:nth-of-type(2) {
-    width: 540px;
-  }
-
-  .contest-form__text:nth-of-type(3) {
-    width: 500px;
-  }
-
-  .contest-form__contacts {
-    position: absolute;
-    top: 620px;
-    width: 616px;
-    box-sizing: border-box;
-  }
-
-  .contest-form__contacts label {
-    position: absolute;
-    top: 130px;
-    left: 80px;
-  }
-
-  .contest-form__contacts label:nth-of-type(2) {
-    position: absolute;
-    top: 220px;
-    left: 80px;
-  }
-
-  .contest-form__contacts input {
-    width: 496px;
-    margin-bottom: 60px;
-  }
-
-  .contest-form__contacts input:last-child {
-    margin-bottom: 60px;
-  }
-
-  .contest-form__textarea {
-    width: 496px;
-  }
-
-  .contest-form__btn {
-    float: left;
-  }
-
-  .contest-form__note {
-    float: right;
-  }
-
-  .contest-form__app {
-    position: absolute;
-    top: 290px;
-    width: 616px;
-    box-sizing: border-box;
+  .contest-form__personality {
+    order: 0;
   }
 
   .contest-form__achievements {
-    margin-top: 400px;
+    order: 3;
   }
+
+  .contest-form__contacts {
+    order: 2;
+  }
+
+  .contest-form__app {
+    order: 1;
+  }
+
+  .contest-form__emotions {
+    order: 4;
+  }
+
+  .contest-form__controls {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contest-form__contacts .contest-form__title {
+    margin-bottom: 0;
+  }
+
+  .contest-form__contacts-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contest-form__tel {
+    order: 0;
+  }
+
+  .contest-form__contacts-flex label:first-of-type {
+    order: 1;
+  }
+
+  .contest-form__email {
+    order: 2;
+  }
+
+  .contest-form__contacts-flex label:last-of-type {
+    order: 3;
+  }
+
+  .contest-form__contacts input,
+  .contest-form__contacts input:last-child {
+    margin-bottom: 15px;
+  }
+
+  //
+  //.contest-form__personality input {
+  //  margin-right: 0;
+  //  margin-left: auto;
+  //  margin-bottom: 60px;
+  //}
+  //
+  //.contest-form__personality label {
+  //  //position: absolute;
+  //}
+  //
+  //.contest-form__personality label {
+  //  margin-right: 15px;
+  //}
+  //
+
+  //
+  //.contest-form__contacts {
+  //  //position: absolute;
+  //  //top: 620px;
+  //  width: 616px;
+  //  box-sizing: border-box;
+  //}
+  //
+  //.contest-form__contacts label {
+  //  //position: absolute;
+  //  //top: 130px;
+  //  //left: 80px;
+  //}
+  //
+  //.contest-form__contacts label:nth-of-type(2) {
+  //  //position: absolute;
+  //  //top: 220px;
+  //  //left: 80px;
+  //}
+  //
+  //.contest-form__contacts input {
+  //  width: 496px;
+  //  margin-bottom: 60px;
+  //}
+  //
+  //.contest-form__contacts input:last-child {
+  //  margin-bottom: 60px;
+  //}
+  //
+  //.contest-form__textarea {
+  //  width: 496px;
+  //}
+  //
+  //.contest-form__btn {
+  //  float: left;
+  //}
+  //
+  //.contest-form__note {
+  //  float: right;
+  //}
+  //
+  //.contest-form__app {
+  //  //position: absolute;
+  //  //top: 290px;
+  //  width: 616px;
+  //  box-sizing: border-box;
+  //}
+  //
+  //.contest-form__achievements {
+  //  margin-top: 400px;
+  //}
 }
 
 @media #{$desktop-width} {
-  .contest-form__personality,
-  .contest-form__app {
-    width: 431px;
-  }
-
-  .contest-form__app {
-    top: 0;
-    right: 0;
-  }
-
-  .contest-form__personality {
-    padding-bottom: 60px;
-  }
-
-  .contest-form__text:nth-of-type(1) {
-    width: 336px;
-  }
-
-  .contest-form__text:nth-of-type(2) {
-    width: 376px;
-  }
-
-  .contest-form__text:nth-of-type(3) {
-    width: 337px;
-  }
-
-  .contest-form__contacts {
-    top: 360px;
-    width: 936px;
-  }
-
-  .contest-form__contacts input {
-    display: inline-block;
-    vertical-align: top;
-    width: 371px;
-    margin-right: 70px;
-  }
-
-  .contest-form__contacts input:last-child {
-    margin-right: 0;
-  }
-
-  .contest-form__contacts label:nth-of-type(2) {
-    top: 130px;
-    left: 540px;
-  }
-
-  .contest-form__achievements {
-    margin-top: 360px;
-  }
-
-  .contest-form__achievements label {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 100px;
-  }
-
-  .contest-form__textarea {
-    width: 816px;
-  }
-
-  .contest-form__note-text {
-    display: inline;
-  }
+  //.contest-form__personality,
+  //.contest-form__app {
+  //  width: 431px;
+  //}
+  //
+  //.contest-form__app {
+  //  top: 0;
+  //  right: 0;
+  //}
+  //
+  //.contest-form__personality {
+  //  padding-bottom: 60px;
+  //}
+  //
+  //.contest-form__text:nth-of-type(1) {
+  //  width: 336px;
+  //}
+  //
+  //.contest-form__text:nth-of-type(2) {
+  //  width: 376px;
+  //}
+  //
+  //.contest-form__text:nth-of-type(3) {
+  //  width: 337px;
+  //}
+  //
+  //.contest-form__contacts {
+  //  top: 360px;
+  //  width: 936px;
+  //}
+  //
+  //.contest-form__contacts input {
+  //  display: inline-block;
+  //  vertical-align: top;
+  //  width: 371px;
+  //  margin-right: 70px;
+  //}
+  //
+  //.contest-form__contacts input:last-child {
+  //  margin-right: 0;
+  //}
+  //
+  //.contest-form__contacts label:nth-of-type(2) {
+  //  top: 130px;
+  //  left: 540px;
+  //}
+  //
+  //.contest-form__achievements {
+  //  margin-top: 360px;
+  //}
+  //
+  //.contest-form__achievements label {
+  //  display: inline-block;
+  //  vertical-align: top;
+  //  padding-left: 100px;
+  //}
+  //
+  //.contest-form__textarea {
+  //  width: 816px;
+  //}
+  //
+  //.contest-form__note-text {
+  //  display: inline;
+  //}
 }
 
