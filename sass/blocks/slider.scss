@@ -1,0 +1,41 @@
+.slider__input {
+  display: none;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: $slider-toggle-color;
+  border: 3px solid $body-bg;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.app-versions__toggles .slider__toggle {
+  border: 3px solid $sections-bg;
+}
+
+.slider__toggle:hover {
+  background-color: $slider-toggle-hover-color;
+}
+
+.slider__toggle:active {
+  background-color: $button-disabled-color;
+}
+
+.slider__input--1:checked ~ .slider__toggles .slider__toggle--1,
+.slider__input--2:checked ~ .slider__toggles .slider__toggle--2,
+.slider__input--3:checked ~ .slider__toggles .slider__toggle--3 {
+  border-radius: 50%;
+  border: 3px solid $body-color;
+}
+
+.slider__input--1:checked ~ .slider__toggles .slider__toggle--1:hover,
+.slider__input--2:checked ~ .slider__toggles .slider__toggle--2:hover,
+.slider__input--3:checked ~ .slider__toggles .slider__toggle--3:hover {
+  background-color: $slider-toggle-color;
+  cursor: default;
+}
