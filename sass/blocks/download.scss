@@ -4,10 +4,12 @@
 
 .download__wrapper {
   //@include container;
-  min-height: 200px;
+  //min-height: 200px;
+  width: 282px;
+  margin: 0 auto;
   padding-left: 19px;
   padding-right: 19px;
-  padding-top: 28px;
+  padding-top: 38px;
   padding-bottom: 35px;
   color: $page-header-color;
   background-color: $main-nav-bg;
@@ -18,12 +20,20 @@
 }
 
 .download__link {
+  display: block;
+  width: 281px;
+  padding: 15px 35px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
   line-height: 18px;
   text-decoration: none;
   color: $page-header-color;
+  border-radius: 100px;
+  border: 3px solid $body-bg;
 }
 
 .download__info {
+  margin-top: 25px;
   font-size: $font-size-small;
 }
 
@@ -53,6 +63,10 @@
     margin-bottom: 50px;
     font-size: $font-size-super-big;
     font-weight: $font-weight-light;
+  }
+
+  .download__link {
+    width: 300px;
   }
 }
 

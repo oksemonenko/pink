@@ -12,13 +12,21 @@
 //}
 
 .app-versions__list {
-  width: 200%;
+  width: 270%;
   margin: 0 auto;
-  transform: translateX(-25%);
+  background: $body-bg;
+  transform: translateX(-31%);
+  border-collapse: collapse;
 }
 
 .app-versions__list td:first-child {
   display: none;
+}
+
+.app-versions__list td {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: 2px solid $sections-bg;
 }
 
 .app-versions__item-name,
@@ -30,13 +38,24 @@
   text-transform: uppercase;
 }
 
+.app-versions__item-name {
+  font-weight: $font-weight-bold;
+}
+
 .app-versions__item-price {
   font-size: $font-size-big;
+  font-weight: $font-weight-light;
   line-height: 30px;
+}
+
+.app-versions__row {
+  //font-size: 0;
+  text-align: left;
 }
 
 .app-versions__item-option,
 .app-versions__item-option--hidden {
+  padding-left: 25px;
   font-size: $font-size-small;
   line-height: 30px;
   text-transform: uppercase;
