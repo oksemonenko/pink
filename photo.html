@@ -34,10 +34,13 @@
         <figure class="photo  photo--panorama">
           <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Прыгать или нет?">
           <div class="photo__description  photo__description--panorama">
-            <div class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></div>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите
-              прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
+            <div class="photo__author  photo__author--panorama">Анна <span class="photo__time">(5 минут назад)</span></div>
+            <p class="photo__comment  photo__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__likes  photo__likes--panorama">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">215</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -45,7 +48,10 @@
           <div class="photo__description">
             <div class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></div>
             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">356</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">356</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -53,7 +59,10 @@
           <div class="photo__description">
             <div class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></div>
             <p class="photo__comment">Соседи будут рады!</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">666</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">666</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -61,7 +70,10 @@
           <div class="photo__description">
             <div class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></div>
             <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">215</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">215</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -69,7 +81,10 @@
           <div class="photo__description">
             <div class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></div>
             <p class="photo__comment">Самая кубанская в мире!</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">4</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">4</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -77,7 +92,10 @@
           <div class="photo__description">
             <div class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></div>
             <p class="photo__comment">Где снег-то?</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">150</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">150</span></span>
+            </div>
           </div>
         </figure>
         <figure class="photo">
@@ -85,7 +103,10 @@
           <div class="photo__description">
             <div class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></div>
             <p class="photo__comment">Всем GM и взаимные лайки!</p>
-            <div class="photo__likes">Нравится: <span class="photo__likes-count">2560</span></div>
+            <div class="photo__likes">
+              <span class="photo__likes-control">like </span>
+              <span class="photo__likes-title">Нравится: <span class="photo__likes-count">2560</span></span>
+            </div>
           </div>
         </figure>
       </section>
@@ -95,13 +116,17 @@
         <div class="publish-photo__editor">
           <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
           <div class="publish-photo__editor-tools">
-            <button class="publish-photo__crop-photo" type="button">Обрезать</button>
-            <button class="publish-photo__change-colour-photo">Изменить цвет</button>
-            <button class="publish-photo__brightness-photo">Яркость</button>
-            <div class="publish-photo__toggle"></div>
+            <button class="publish-photo__editor-tool  publish-photo__editor-tool--crop-photo" type="button">Обрезать</button>
+            <button class="publish-photo__editor-tool  publish-photo__editor-tool--change-colour-photo">Изменить цвет</button>
+            <button class="publish-photo__editor-tool  publish-photo__editor-tool--brightness-photo">Яркость</button>
+            <div class="publish-photo__toggle  publish-photo__toggle--crop-photo">1</div>
+            <div class="publish-photo__toggle  publish-photo__toggle--change-colour-photo">2</div>
+            <div class="publish-photo__toggle  publish-photo__toggle--brightness-photo">3</div>
           </div>
-          <a class="publish-photo__post" href="#">Запостить</a>
-          <a class="publish-photo__cancel">Отмена</a>
+          <div class="publish-photo__controls">
+            <a class="publish-photo__post" href="#">Запостить</a>
+            <a class="publish-photo__cancel">Отмена</a>
+          </div>
         </div>
       </section>
     </main>

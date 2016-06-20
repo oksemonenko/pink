@@ -1,4 +1,6 @@
 .gallery {
+  display: flex;
+  flex-direction: column;
   padding-top: 35px;
 }
 
@@ -19,7 +21,10 @@
 
 @media #{$tablet-width} {
   .gallery {
-    @include container;
+    //@include container;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-top: 90px;
   }
 
@@ -38,6 +43,10 @@
 }
 
 @media #{$desktop-width} {
+  .gallery {
+    @include container;
+    justify-content: space-between;
+  }
   .gallery__title {
     margin-bottom: 100px;
   }

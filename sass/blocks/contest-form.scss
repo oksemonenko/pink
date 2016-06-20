@@ -341,11 +341,14 @@
   .contest-form {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .contest-form__personality,
   .contest-form__app {
     width: 431px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contest-form__personality {
