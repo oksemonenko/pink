@@ -53,6 +53,7 @@
 }
 
 .photo--panorama {
+  position: relative;
   width: 100%;
   display: block;
 }
@@ -60,6 +61,21 @@
 .photo--panorama img {
   width: 100%;
   margin: 0;
+}
+
+.photo--panorama::after {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  padding: 6px 20px;
+  background: $footer-info-color;
+  color: $page-header-color;
+  font-size: $font-size-super-small;
+  font-weight: $font-weight-bold;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 @media #{$tablet-width} {
@@ -118,6 +134,10 @@
   .photo__likes-control {
     order: 2;
     margin-left: 15px;
+  }
+
+  .photo--panorama::after {
+    top: 56px;
   }
 }
 
