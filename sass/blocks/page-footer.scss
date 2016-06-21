@@ -24,6 +24,36 @@
 
 .page-footer__copyright {
   margin-bottom: 0;
+  font-size: $font-size-small;
+  line-height: 18px;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 34px;
+  margin-left: 10px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat center;
+  font-size: 0;
+
+}
+
+//.page-footer__contacts {
+//  position: relative;
+//}
+//.page-footer__contacts::after {
+//  content: '';
+//  position: absolute;
+//  left: 0;
+//  width: 595px;
+//  height: 62px;
+//  background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+//  z-index: 10;
+//}
+
+.page-footer__extension {
+  display: none;
 }
 
 @media #{$tablet-width} {
@@ -47,6 +77,13 @@
     display: inline-block;
   }
 
+  .page-footer__extension {
+    @include container-fluid;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+  }
+
   .page-footer--inner-page {
     @include container-fluid;
     display: flex;
@@ -55,6 +92,10 @@
 }
 
 @media #{$desktop-width} {
+  .page-footer {
+    padding-bottom: 30px;
+  }
+
   .page-footer__contacts {
     display: flex;
     justify-content: space-around;
@@ -70,5 +111,9 @@
   .page-footer__contact {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  .page-footer__extension {
+    padding-top: 77px;
   }
 }
