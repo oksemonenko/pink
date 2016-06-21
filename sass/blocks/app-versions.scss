@@ -61,6 +61,30 @@
   text-transform: uppercase;
 }
 
+.app-versions__item-option-availability {
+  position: relative;
+}
+
+.app-versions__option-availability {
+  position: absolute;
+  right: 20px;
+  color: transparent;
+}
+
+.app-versions__option-availability--yes {
+  width: 31px;
+  height: 21px;
+  background: url("../img/icon-yes.svg") no-repeat center;
+  background-size: cover;
+}
+
+.app-versions__option-availability--no {
+  width: 27px;
+  height: 26px;
+  background: url("../img/icon-no.svg") no-repeat center;
+  background-size: cover;
+}
+
 @media #{$tablet-width} {
   .app-versions__list {
     @include container;
@@ -69,7 +93,7 @@
   }
 
   .app-versions__list td:first-child {
-    display: inline;
+    display: table-cell;
   }
 
   .app-versions__toggles {
@@ -82,5 +106,32 @@
 
   .app-versions__item-option--hidden {
     display: none;
+  }
+
+  .app-versions__option-availability {
+    right: 40%;
+    top: 30%
+  }
+
+  .app-versions__header td:first-child {
+    background: $sections-bg;
+  }
+
+  .app-versions__row {
+    text-align: center;
+  }
+
+  .app-versions__item-option {
+    text-align: left;
+  }
+
+  .app-versions__list td {
+    min-width: 154px;
+  }
+}
+
+@media #{$desktop-width} {
+  .app-versions__list td {
+    min-width: 235px;
   }
 }
