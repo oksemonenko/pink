@@ -39,6 +39,17 @@
 
 .photo__likes {
   color: $footer-info-color;
+  display: flex;
+}
+
+.photo__likes-control {
+  align-self: center;
+  width: 13px;
+  height: 12px;
+  margin-right: 15px;
+  background: url("../img/icon-heart.svg") no-repeat center;
+  font-size: 0;
+  cursor: pointer;
 }
 
 .photo--panorama {
@@ -101,12 +112,12 @@
   }
 
   .photo__likes {
-    display: flex;
     justify-content: space-between;
   }
 
   .photo__likes-control {
     order: 2;
+    margin-left: 15px;
   }
 }
 
@@ -114,5 +125,13 @@
 @media #{$desktop-width} {
   .photo__description--panorama {
     width: 940px;
+  }
+
+  .photo__likes {
+    //display: flex;
+  }
+
+  .photo__likes-control {
+    margin-bottom: 10px;
   }
 }
