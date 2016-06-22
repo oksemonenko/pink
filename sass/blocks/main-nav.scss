@@ -37,6 +37,24 @@
     padding-right: 13px;
     background: $main-nav-bg url('../img/icon-menu-cross.svg') no-repeat center;
   }
+
+  &--nojs {
+    width: 100%;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: block;
+    top: -40px;
+    right: 0;
+    width: 50px;
+    height: 24px;
+    background: $main-nav-bg url('../img/icon-menu-cross.svg') no-repeat center;
+  }
+
+  &--nojs .main-nav__list {
+    width: 100%;
+  }
+;
 }
 
 .main-nav__toggle {
@@ -79,7 +97,7 @@
   }
 
   .main-nav--nojs .main-nav__toggle {
-    display: none;
+    //display: none;
   }
 
   .main-nav--nojs .main-nav__list {
@@ -118,6 +136,10 @@
   }
 
   .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 

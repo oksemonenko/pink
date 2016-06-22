@@ -5,7 +5,14 @@ var navToggle = document.querySelector('.main-nav__toggle');
 
 var pageHeader = document.querySelector('.page-header');
 
+var intro = document.querySelector('.intro');
+
+var download = document.querySelector('.download');
+
 navMain.classList.remove('main-nav--nojs');
+pageHeader.classList.remove('page-header--nojs');
+intro.classList.remove('intro--nojs');
+download.classList.remove('download--nojs');
 
 navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {

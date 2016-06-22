@@ -9,6 +9,11 @@
   &--nav-opened {
     background: $main-nav-bg;
   }
+
+  &--nojs {
+    margin-top: 0;
+    background: $main-nav-bg;
+  }
 }
 
 .page-header__wrapper {
@@ -27,6 +32,11 @@
 @media #{$desktop-width} {
   .page-header {
     padding: 0 20px;
+
+    &--nojs {
+      margin-top: 0;
+      background: $page-header-min-bg;
+    }
   }
 
   .page-header__wrapper {

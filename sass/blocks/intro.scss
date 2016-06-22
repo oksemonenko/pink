@@ -5,14 +5,21 @@
   background-image: url('../img/bg-back-mobile.png');
   background-repeat: no-repeat;
   background-position: center top;
+
+  &--inner-page {
+    min-height: 237px;
+    background-image: url('../img/bg-back-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &--nojs {
+    min-height: 787px;
+    padding-top: 0;
+    background-position: center 325px;
+  }
 }
 
-.intro--inner-page {
-  min-height: 237px;
-  background-image: url('../img/bg-back-mobile.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-}
 
 .intro__title {
   width: 230px;
@@ -27,13 +34,19 @@
     min-height: 729px;
     padding-top: 0;
     background-image: url('../img/bg-back-tablet.png');
-  }
 
-  .intro--inner-page {
-    min-height: 440px;
-    background-image: url('../img/bg-back-tablet.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
+    &--inner-page {
+      min-height: 440px;
+      background-image: url('../img/bg-back-tablet.jpg');
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &--nojs {
+      min-height: 1095px;
+      padding-top: 0;
+      background-position: center 365px;
+    }
   }
 
   .intro__title {
@@ -46,12 +59,20 @@
   .intro {
     min-height: 854px;
     background-image: url('../img/bg-back-desktop.png');
+
+    &--inner-page {
+      min-height: 394px;
+      background-image: url('../img/bg-back-desktop.jpg');
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+
+    &--nojs {
+      min-height: 854px;
+      padding-top: 0;
+      background-position: center top;
+    }
   }
 
-  .intro--inner-page {
-    min-height: 394px;
-    background-image: url('../img/bg-back-desktop.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
+
 }

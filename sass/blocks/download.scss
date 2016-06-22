@@ -1,5 +1,9 @@
 .download {
   padding-top: 380px;
+
+  &--nojs {
+    padding-top: 420px;
+  }
 }
 
 .download__wrapper {
