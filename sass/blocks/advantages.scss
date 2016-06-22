@@ -1,26 +1,49 @@
 .advantages {
-  padding-top: 45px;
+  padding-top: 38px;
 }
 
 .advantages__question,
 .advantages__answer {
+  width: 205px;
+  margin: 0 auto;
   font-size: $font-size-big;
   font-weight: $font-weight-light;
 }
 
+.advantages__question {
+  margin-bottom: 20px;
+}
+
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0 20px;
+  padding-top: 65px;
   list-style: none;
   background: $sections-bg;
 }
 
+.advantages__item {
+  margin-bottom: 32px;
+}
+
 .advantages__item-title {
+  margin-bottom: 12px;
+  font-size: $font-size-normal;
   line-height: 24px;
   font-weight: $font-weight-bold;
 }
 
+.advantages__item p {
+  font-size: $font-size-small;
+  line-height: 24px;
+  margin: 0;
+}
+
 .advantages__promo-image {
+  margin-top: -35px;
+  padding-top: 40px;
   background: $sections-bg;
 }
 

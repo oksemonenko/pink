@@ -1,7 +1,24 @@
 .page-footer {
-  padding-top: 48px;
   font-size: $font-size-big;
   font-weight: $font-weight-light;
+}
+
+.page-footer__text {
+  font-size: $font-size-big;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 42px;
+  margin-bottom: 25px;
+}
+
+.page-footer__contacts {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-footer__contact {
+  margin: 0;
+  margin-bottom: 11px;
 }
 
 .page-footer__contacts b {

@@ -1,7 +1,9 @@
 .app-versions {
-  padding-top: 65px;
-  padding-bottom: 48px;
+  @include container;
+  padding-top: 62px;
+  padding-bottom: 43px;
   background: $sections-bg;
+  overflow: hidden;
 }
 
 //.app-versions__list,
@@ -12,7 +14,7 @@
 //}
 
 .app-versions__list {
-  width: 270%;
+  width: 262%;
   margin: 0 auto;
   background: $body-bg;
   transform: translateX(-31%);
@@ -24,8 +26,8 @@
 }
 
 .app-versions__list td {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   border: 2px solid $sections-bg;
 }
 
@@ -53,9 +55,14 @@
   text-align: left;
 }
 
+.app-versions__row td {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .app-versions__item-option,
 .app-versions__item-option--hidden {
-  padding-left: 25px;
+  padding-left: 22px;
   font-size: $font-size-small;
   line-height: 30px;
   text-transform: uppercase;
@@ -67,7 +74,8 @@
 
 .app-versions__option-availability {
   position: absolute;
-  right: 20px;
+  top: 19px;
+  right: 17px;
   color: transparent;
 }
 
@@ -79,10 +87,17 @@
 }
 
 .app-versions__option-availability--no {
+  top: 15px;
+  right: 18px;
   width: 27px;
   height: 26px;
   background: url("../img/icon-no.svg") no-repeat center;
   background-size: cover;
+}
+
+.app-versions__toggles {
+  margin-top: 33px;
+  margin-left: 9px;
 }
 
 @media #{$tablet-width} {

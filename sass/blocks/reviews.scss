@@ -1,16 +1,29 @@
 .reviews {
-  padding-top: 48px;
+  margin-top: -47px;
+  padding-top: 42px;
   padding-bottom: 65px;
+  background: $body-bg;
 }
 
 .reviews__item {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .reviews__item p {
   font-size: $font-size-small;
   line-height: 30px;
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-size: $font-size-normal;
+  line-height: 30px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .reviews__author-personality {
@@ -19,6 +32,11 @@
 
 .reviews__controls {
   display: none;
+}
+
+.reviews__toggles {
+  margin-top: 24px;
+  margin-left: 10px;
 }
 
 @media #{$tablet-width} {

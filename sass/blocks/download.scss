@@ -1,5 +1,5 @@
 .download {
-  padding-top: 380px;
+  padding-top: 393px;
 
   &--nojs {
     padding-top: 420px;
@@ -13,10 +13,10 @@
   margin: 0 auto;
   padding-left: 19px;
   padding-right: 19px;
-  padding-top: 38px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 15px;
   color: $page-header-color;
-  background-color: $main-nav-bg;
+  background-color: $download-bg;
 }
 
 .download__title {
@@ -25,13 +25,15 @@
 
 .download__link {
   width: 281px;
+  margin-bottom: 34px;
   color: $page-header-color;
   border-color: $body-bg;
 }
 
 .download__info {
-  margin-top: 25px;
+  margin-top: 22px;
   font-size: $font-size-small;
+  line-height: 24px;
 }
 
 @media #{$tablet-width} {
