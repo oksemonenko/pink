@@ -40,17 +40,38 @@
 }
 
 @media #{$tablet-width} {
+  .reviews {
+    margin-top: 0;
+    padding-top: 45px;
+  }
+
   .reviews__list {
     @include container;
   }
 
   .reviews__author-name {
     order: 2;
+    margin-bottom: 3px;
+    font-size: $font-size-bigger-normal;
+    line-height: 30px;
+    font-weight: $font-weight-bold;
   }
 
   .reviews__author-personality {
     display: block;
     order: 3;
+    font-size: $font-size-small;
+    line-height: 30px;
+    font-weight: $font-weight-normal;
+  }
+
+  .reviews__item {
+    width: 620px;
+  }
+
+  .reviews__item p {
+    font-size: $font-size-normal;
+    margin-bottom: 34px;
   }
 }
 
