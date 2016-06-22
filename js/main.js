@@ -12,7 +12,14 @@ var download = document.querySelector('.download');
 navMain.classList.remove('main-nav--nojs');
 pageHeader.classList.remove('page-header--nojs');
 intro.classList.remove('intro--nojs');
-download.classList.remove('download--nojs');
+
+function isDownloadBlock() {
+   if (download) {
+       download.classList.remove('download--nojs');
+   }
+}
+
+isDownloadBlock();
 
 navToggle.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {

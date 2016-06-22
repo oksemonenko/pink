@@ -3,3 +3,19 @@
 //  background-repeat: no-repeat;
 //  background-position: center top;
 //}
+
+.inner-page .intro--nojs {
+  min-height: 562px;
+}
+
+@media #{$tablet-width} {
+  .inner-page .intro--nojs {
+    min-height: 805px;
+  }
+}
+
+@media #{$desktop-width}{
+  .inner-page .intro--nojs {
+    min-height: 394px;
+  }
+}
