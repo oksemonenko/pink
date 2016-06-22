@@ -101,13 +101,34 @@
 }
 
 @media #{$tablet-width} {
-  .app-versions__list {
-    @include container;
+  .app-versions {
+    padding-top: 87px;
     width: 100%;
+  }
+
+  .app-versions__list {
+    //@include container;
+    width: 620px;
     transform: translateX(0);
   }
 
+  .app-versions__list td {
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+
+  .app-versions__row td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .app-versions__item-option {
+    padding-left: 15px;
+    text-transform: none;
+  }
+
   .app-versions__list td:first-child {
+    width: 135px;
     display: table-cell;
   }
 
@@ -141,7 +162,17 @@
   }
 
   .app-versions__list td {
-    min-width: 154px;
+    width: 150px;
+  }
+
+  .app-versions__item-name {
+    font-size: $font-size-middle;
+    line-height: 30px;
+    font-weight: $font-weight-bold;
+  }
+
+  .app-versions__item-price {
+    font-size: $font-size-normal;
   }
 }
 
