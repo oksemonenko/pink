@@ -165,16 +165,31 @@
 
 
 @media #{$desktop-width} {
-  .photo__description--panorama {
-    width: 940px;
+  .photo {
+    margin-bottom: 55px;
   }
 
-  .photo__likes {
-    //display: flex;
+  .photo__description {
+    padding-bottom: 23px;
+  }
+
+  .photo__description--panorama {
+    width: 940px;
+    min-height: 50px;
+  }
+
+  .photo__likes--panorama .photo__likes-control {
+    margin-right: 15px;
+    margin-top: 5px;
   }
 
   .photo__likes-control {
     margin-bottom: 10px;
+  }
+
+  .photo__comment {
+    //margin-top: -28px;
+    margin-bottom: 0;
   }
 }
 
