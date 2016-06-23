@@ -6,14 +6,20 @@
   background: $body-bg;
 }
 
-.contest-form input {
+.contest-form input,
+.contest-form textarea{
   border: 2px solid $button-disabled-color;
+}
+
+.contest-form input[type="submit"] {
+  border: none;
 }
 
 .contest-form__title {
   width: 220px;
-  padding-top: 100px;
-  margin-bottom: 40px;
+  padding-top: 110px;
+  margin-bottom: 44px;
+  margin-top: -30px;
   font-size: $font-size-small;
   line-height: 18px;
   text-align: center;
@@ -53,22 +59,50 @@
   box-sizing: border-box;
 }
 
+.contest-form__email-wrapper,
+.contest-form__tel-wrapper {
+  width: 100%;
+}
+
+.contest-form__personality {
+  //margin-bottom: 50px;
+}
+
+.contest-form__personality-flex,
+.contest-form__contacts-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__question,
+.contest-form__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
 .contest-form__personality label,
 .contest-form__contacts label {
   margin-left: 22px;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.contest-form__emotions label {
-  margin-top: 59px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .contest-form__achievements,
 .contest-form__app {
-  padding-bottom: 50px;
+  margin-top: -47px;
+  padding-bottom: 59px;
   background: $sections-bg;
+}
+
+.contest-form__app {
+  padding-bottom: 0;
+}
+
+.contest-form__emotions label {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 12px;
 }
 
 .contest-form__achievements input,
@@ -78,7 +112,7 @@
 
 .contest-form__option {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding-left: 70px;
 }
 
@@ -86,8 +120,13 @@
   margin-bottom: 0;
 }
 
+.contest-form__app-flex .contest-form__option {
+  margin-bottom: 50px;
+}
+
 .contest-form__contacts {
-  padding-top: 38px;
+  padding-top: 30px;
+  padding-bottom: 8px;
 }
 
 .contest-form__contacts legend,
@@ -97,8 +136,8 @@
 
 .contest-form__btn {
   width: 276px;
-  padding: 22px 48px;
-  margin-bottom: 40px;
+  padding: 17px 48px;
+  margin-bottom: 21px;
   align-self: center;
   font-weight: $font-weight-bold;
   line-height: 30px;
@@ -157,6 +196,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .contest-form__option label::before {
@@ -167,6 +208,7 @@
   width: 36px;
   height: 36px;
   border: 2px solid $button-disabled-color;
+  background: $body-bg;
   cursor: pointer;
 }
 
@@ -290,8 +332,12 @@
     flex-direction: column;
   }
 
-  .contest-form__tel {
+  .contest-form__contact {
     position: relative;
+  }
+
+  .contest-form__tel {
+    //position: relative;
     order: 0;
   }
 
@@ -300,7 +346,7 @@
   }
 
   .contest-form__email {
-    position: relative;
+    //position: relative;
     order: 2;
   }
 
@@ -317,11 +363,10 @@
     margin-left: 60px;
   }
 
-  .contest-form__tel::after,
-  .contest-form__email::after {
+  .contest-form__contact::after {
     content: "";
     position: absolute;
-    top: 19px;
+    top: 2px;
     right: 2px;
     width: 58px;
     height: 58px;
@@ -330,11 +375,11 @@
     background-position: center;
   }
 
-  .contest-form__tel::after {
+  .contest-form__contact:first-child::after {
     background-image: url("../img/phone.svg");
   }
 
-  .contest-form__email::after {
+  .contest-form__contact:last-child::after {
     background-image: url("../img/mail.svg");
   }
 
@@ -440,8 +485,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
+    //padding-left: 40px;
+    //padding-right: 40px;
   }
 
   .contest-form__tel {
@@ -453,6 +498,11 @@
   .contest-form__contacts-flex label:first-of-type {
     order: 2;
     margin-right: 250px;
+  }
+
+  .contest-form__contact {
+    display: flex;
+    flex-direction: column;
   }
 
   .contest-form__email {
@@ -477,6 +527,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     height: 180px;
+    margin: 0;
     //padding-left: 40px;
     //padding-right: 40px;
   }
@@ -505,10 +556,18 @@
     padding-left: 70px;
   }
 
-  .contest-form__tel::after,
-  .contest-form__email::after {
-    right: -20px;
+  .contest-form__contact:first-child::after {
+    right: 78px;
   }
+
+  .contest-form__contact:last-child::after {
+    right: 11px;
+  }
+
+  //.contest-form__tel::after,
+  //.contest-form__email::after {
+  //  right: -20px;
+  //}
 
   .contest-form__note-text {
     display: inline;

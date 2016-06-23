@@ -35,17 +35,19 @@
       <form class="contest-form">
         <fieldset class="contest-form__personality">
           <legend class="contest-form__title  visually-hidden">Персональные данные</legend>
-          <div class="contest-form__question">
-            <label for="surname">Фамилия:</label>
-            <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
-          </div>
-          <div class="contest-form__question">
-            <label for="surname">Имя:</label>
-            <input class="contest-form__text" type="text" id="name" placeholder="Введите ваше имя">
-          </div>
-          <div class="contest-form__question">
-            <label for="surname">Отчество:</label>
-            <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+          <div class="contest-form__personality-flex">
+            <div class="contest-form__question">
+              <label for="surname">Фамилия:</label>
+              <input class="contest-form__text" type="text" id="surname" placeholder="Укажите фамилию">
+            </div>
+            <div class="contest-form__question">
+              <label for="surname">Имя:</label>
+              <input class="contest-form__text" type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="contest-form__question">
+              <label for="surname">Отчество:</label>
+              <input class="contest-form__text" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
           </div>
         </fieldset>
         <fieldset class="contest-form__achievements">
@@ -80,13 +82,17 @@
         <fieldset class="contest-form__contacts">
           <legend class="contest-form__title">Контактная информация</legend>
           <div class="contest-form__contacts-flex">
-            <label for="telephone">Номерок телефончика</label>
-            <div class="contest-form__tel">
-              <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
+            <div class="contest-form__contact">
+              <label for="telephone">Номерок телефончика</label>
+              <div class="contest-form__tel-wrapper">
+                <input class="contest-form__tel" type="tel" id="telephone" placeholder="Номер, пожалуйста">
+              </div>
             </div>
-            <label for="telephone">Адресок почты</label>
-            <div class="contest-form__email">
-              <input class="contest-form__email" type="email" id="email" placeholder="E-mail, пожалуйста">
+            <div class="contest-form__contact">
+              <label for="telephone">Адресок почты</label>
+              <div class="contest-form__email-wrapper">
+                <input class="contest-form__email" type="email" id="email" placeholder="E-mail, пожалуйста">
+              </div>
             </div>
           </div>
         </fieldset>
@@ -118,7 +124,7 @@
         </div>
       </form>
     </main>
-    <footer class="page-footer  page-footer--inner-page">
+    <footer class="page-footer  page-footer--inner-page  page-footer--form-page">
       <a class="page-footer-logo" href="index.html">
         <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>

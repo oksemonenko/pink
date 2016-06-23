@@ -35,8 +35,12 @@
   text-decoration: none;
 }
 
-.inner-page .page-footer {
+.page-footer--inner-page {
   padding-top: 40px;
+}
+
+.page-footer--form-page {
+  padding-top: 20px;
 }
 
 .page-footer__copyright {
