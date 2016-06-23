@@ -10,3 +10,11 @@
   border-style: solid;
   border-width: 3px;
 }
+
+
+@media #{$desktop-width} {
+  .btn {
+    padding: 15px 28px;
+    font-size: $font-size-smaller-big;
+  }
+}

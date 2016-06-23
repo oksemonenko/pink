@@ -170,7 +170,7 @@
 
 @media #{$desktop-width} {
   .advantages {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .advantages__question,
@@ -179,19 +179,16 @@
     margin: 0 auto;
     font-size: $font-size-super-big;
     font-weight: $font-weight-light;
+    line-height: 59px;
   }
 
   .advantages__answer {
     width: 500px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
 
-  .advantages__effect {
-    @include container;
-    width: 525px;
-    padding-left: 350px;
-    padding-top: 115px;
-    padding-bottom: 115px;
+  .advantages__promo {
+    //padding-top: 40px;
   }
 
   .advantages__promo-image img {
@@ -211,9 +208,24 @@
     align-items: flex-start;
   }
 
+  .advantages__list {
+    padding-top: 3px;
+  }
+
   .advantages__item {
-    width: 250px;
+    width: 238px;
     text-align: center;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 22px;
+    font-size: $font-size-rather-big;
+    line-height: 30px;
+  }
+
+  .advantages__item p {
+    font-size: $font-size-normal;
+    line-height: 30px;
   }
 
   //.advantages__promo-image {
@@ -256,24 +268,44 @@
   //  margin-left: 80px;
   //}
 
+  .advantages__effect {
+    width: 100%;
+    padding: 0;
+    padding-top: 85px;
+    padding-bottom: 115px;
+    background: $sections-bg;
+  }
+
+  .advantages__effect-wrapper {
+    width: 525px;
+    padding-left: 570px;
+  }
+
+  .advantages__effect-title {
+    width: 298px;
+    margin-bottom: 20px;
+  }
+
   .advantages__effect::before {
     content: '24';
     position: absolute;
-    top: 50px;
-    left: 0;
+    top: 22px;
+    left: 15%;
     width: 298px;
     height: 345px;
     background: url("../img/timer1.svg") no-repeat center;
+    background-size: cover;
     color: $footer-info-color;
-    font-size: $font-size-decoration;
+    font-size: $font-size-big-decoration;
     font-weight: $font-weight-bold;
     text-align: center;
-    line-height: 370px;
+    line-height: 380px;
   }
 
   .advantages__effect p {
+    margin-bottom: 35px;
     font-size: $font-size-normal;
-    line-height: 24px;
+    line-height: 30px;
   }
 
   .advantages__effect a {

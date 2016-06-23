@@ -40,6 +40,8 @@
   }
 
   .page-header__wrapper {
-    @include clearfix;
+    //@include clearfix;
+    display: flex;
+    justify-content: space-between;
   }
 }

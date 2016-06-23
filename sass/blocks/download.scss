@@ -84,5 +84,22 @@
     min-height: 500px;
     //margin-left: 10px;
     padding: 110px 0;
+    padding-bottom: 96px;
+  }
+
+  .download__title {
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-size: $font-size-super-big;
+    line-height: 58px;
+  }
+
+  .download__link {
+    margin-bottom: 70px;
+  }
+
+  .download__info {
+    margin-top: 53px;
   }
 }
