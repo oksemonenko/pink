@@ -8,6 +8,14 @@
   min-height: 562px;
 }
 
+.inner-page .page-header {
+  margin-top: 0;
+}
+
+.inner-page .page-footer-logo {
+  margin-bottom: 32px;
+}
+
 @media #{$tablet-width} {
   .inner-page .intro--nojs {
     min-height: 805px;

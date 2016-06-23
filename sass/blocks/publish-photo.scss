@@ -1,7 +1,10 @@
 .publish-photo__description {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 23px;
+  padding-bottom: 42px;
   font-size: $font-size-small;
+  line-height: 30px;
 }
 
 .publish-photo__editor {
@@ -38,12 +41,14 @@
 .publish-photo__editor-controls {
   position: relative;
   display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
 }
 
 .publish-photo__editor-tool {
   margin-right: 35px;
+  padding: 0;
   border: none;
-  font-size: 0;
   cursor: pointer;
 }
 

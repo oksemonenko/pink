@@ -8,6 +8,7 @@
 
   &--inner-page {
     min-height: 237px;
+    padding-top: 0;
     background-image: url('../img/bg-back-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center top;
@@ -23,9 +24,10 @@
 
 .intro__title {
   width: 230px;
-  margin: 35px auto;
+  margin: 32px auto;
   font-size: $font-size-big;
   font-weight: $font-weight-light;
+  line-height: 30px;
   color: $page-header-color;
 }
 
