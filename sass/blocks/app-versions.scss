@@ -114,6 +114,7 @@
   }
 
   .app-versions__list td {
+    width: 150px;
     padding-top: 12px;
     padding-bottom: 7px;
   }
@@ -164,11 +165,8 @@
   }
 
   .app-versions__item-option {
+    padding-left: 20px;
     text-align: left;
-  }
-
-  .app-versions__list td {
-    width: 150px;
   }
 
   .app-versions__item-name {
@@ -183,7 +181,50 @@
 }
 
 @media #{$desktop-width} {
-  .app-versions__list td {
-    min-width: 235px;
+  .app-versions {
+    padding-top: 145px;
+    padding-bottom: 97px;
   }
+
+  .app-versions__list{
+    width: 940px;
+  }
+
+  .app-versions__list td {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .app-versions__list td:first-child {
+    width: 215px;
+  }
+
+  .app-versions__row td {
+    width: 235px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .app-versions__item-name {
+    font-size: $font-size-normal;
+  }
+
+  .app-versions__item-option {
+    font-size: $font-size-normal;
+  }
+
+  .app-versions__item-price {
+    font-size: $font-size-big;
+  }
+
+  .app-versions__option-availability--yes {
+    right: 43%;
+    top: 34%;
+  }
+
+  .app-versions__option-availability--no {
+    right: 44%;
+    top: 30%;
+  }
+
 }
