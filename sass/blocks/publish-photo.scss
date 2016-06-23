@@ -136,6 +136,13 @@
   //  @include container;
   //}
 
+  .publish-photo__description {
+    width: 430px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    font-size: $font-size-normal;
+  }
+
   .publish-photo__editor {
     //@include clearfix;
     @include container;
