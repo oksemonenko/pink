@@ -102,8 +102,9 @@
 
 @media #{$tablet-width} {
   .app-versions {
-    padding-top: 87px;
     width: 100%;
+    padding-top: 87px;
+    padding-bottom: 68px;
   }
 
   .app-versions__list {
@@ -144,9 +145,14 @@
     display: none;
   }
 
-  .app-versions__option-availability {
+  .app-versions__option-availability--yes {
+    right: 38%;
+    top: 26%;
+  }
+
+  .app-versions__option-availability--no {
     right: 40%;
-    top: 30%
+    top: 23%;
   }
 
   .app-versions__header td:first-child {

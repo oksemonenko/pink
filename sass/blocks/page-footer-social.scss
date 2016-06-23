@@ -28,5 +28,7 @@
 }
 
 @media #{$tablet-width} {
-
+  .page-footer-social {
+    padding-right: 20px;
+  }
 }
