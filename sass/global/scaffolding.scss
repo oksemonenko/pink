@@ -3,7 +3,6 @@ body {
   font-size: $font-size-normal;
   font-weight: $font-weight-normal;
   text-align: center;
-  background-image: url('../img/bg-back-mobile.png');
   background-repeat: no-repeat;
   //background-position: center 175px, center top;
   background-position: center top;
@@ -11,13 +10,13 @@ body {
 
 @media #{$tablet-width} {
   body {
-    background-image: url('../img/bg-back-tablet.png');
+
   }
 }
 
 @media #{$desktop-width} {
   body {
-    background-image: url('../img/bg-back-desktop.png');
+
   }
 }
 
@@ -25,3 +24,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+

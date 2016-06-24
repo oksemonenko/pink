@@ -3,3 +3,33 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.devices-links__link {
+  display: inline-block;
+  margin-right: 33px;
+  font-size: 0;
+  vertical-align: middle;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--iphone {
+    width: 47px;
+    height: 56px;
+    background: url('../img/logo-apple.svg') no-repeat;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url('../img/logo-android.svg') no-repeat;
+
+  }
+
+  &--windows-phone {
+    width: 44px;
+    height: 41px;
+    background: url('../img/logo-microsoft.svg') no-repeat;
+  }
+}

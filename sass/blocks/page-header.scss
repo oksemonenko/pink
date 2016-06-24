@@ -5,6 +5,15 @@
   margin-top: 5px;
   color: $page-header-color;
   background: $page-header-min-bg;
+
+  &--nav-opened {
+    background: $main-nav-bg;
+  }
+
+  &--nojs {
+    margin-top: 0;
+    background: $main-nav-bg;
+  }
 }
 
 .page-header__wrapper {
@@ -14,8 +23,25 @@
 @media #{$tablet-width} {
   .page-header {
     min-height: 70px;
-    padding: 40px 20px;
+    padding: 44px 20px;
     padding-bottom: 0;
     margin-top: 0;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-header {
+    padding: 0 20px;
+
+    &--nojs {
+      margin-top: 0;
+      background: $page-header-min-bg;
+    }
+  }
+
+  .page-header__wrapper {
+    //@include clearfix;
+    display: flex;
+    justify-content: space-between;
   }
 }

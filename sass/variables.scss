@@ -4,12 +4,15 @@ $page-header-bg: #000000;
 $page-header-min-bg: rgba($page-header-bg, 0.3);
 $sections-bg: #f2f2f2;
 $button-bg: #2aab6d;
+$download-bg: #1d2631;
 
 $body-color: #283645;
 $page-header-color: #ffffff;
 $headers-color: #000000;
 $footer-info-color: #d22856;
 $button-disabled-color: rgba($body-color, 0.1);
+$slider-toggle-color: rgba($body-color, 0.3);
+$slider-toggle-hover-color: rgba($body-color, 0.6);
 
 $font-family: 'OpenSans', 'Arial', sans-serif;
 
@@ -17,11 +20,19 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-light: 300;
 
-$font-size-normal: 18px;
-$font-size-big: 24px;
-$font-size-super-big: 50px;
-$font-size-small: 14px;
 $font-size-super-small: 12px;
+$font-size-small: 14px;
+$font-size-middle: 16px;
+$font-size-normal: 18px;
+$font-size-bigger-normal: 20px;
+$font-size-smaller-big: 21px;
+$font-size-big: 24px;
+$font-size-rather-big: 30px;
+$font-size-rather-bigger: 40px;
+$font-size-super-big: 50px;
+$font-size-decoration: 96px;
+$font-size-big-decoration: 120px;
+
 
 $mobile-tablet-width: '(max-width: 959px)';
 $tablet-width: '(min-width: 660px)';

@@ -1,0 +1,17 @@
+.map {
+  position: relative;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  background: url("../img/icon-map-marker.svg") no-repeat center;
+}

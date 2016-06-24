@@ -1,11 +1,29 @@
 .reviews {
-  padding-top: 48px;
+  margin-top: -47px;
+  padding-top: 42px;
   padding-bottom: 65px;
+  background: $body-bg;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .reviews__item p {
   font-size: $font-size-small;
   line-height: 30px;
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-size: $font-size-normal;
+  line-height: 30px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .reviews__author-personality {
@@ -16,20 +34,110 @@
   display: none;
 }
 
+.reviews__toggles {
+  margin-top: 24px;
+  margin-left: 10px;
+}
+
 @media #{$tablet-width} {
+  .reviews {
+    margin-top: 0;
+    padding-top: 45px;
+    padding-bottom: 18px;
+  }
+
+  .reviews__list {
+    @include container;
+  }
+
+  .reviews__author-name {
+    order: 2;
+    margin-bottom: 3px;
+    font-size: $font-size-bigger-normal;
+    line-height: 30px;
+    font-weight: $font-weight-bold;
+  }
+
   .reviews__author-personality {
     display: block;
+    order: 3;
+    font-size: $font-size-small;
+    line-height: 30px;
+    font-weight: $font-weight-normal;
+  }
+
+  .reviews__item {
+    width: 620px;
+  }
+
+  .reviews__item p {
+    font-size: $font-size-normal;
+    margin-bottom: 34px;
   }
 }
 
 @media #{$desktop-width} {
+  .reviews {
+    @include container;
+    position: relative;
+    padding-top: 115px;
+    margin-bottom: 24px;
+  }
+
+  .reviews::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 435px;
+    width: 79px;
+    height: 63px;
+    background: url("../img/quotes.svg") no-repeat center;
+  }
+
+  .reviews__list {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+  }
   .reviews__item {
-    display: inline-block;
-    width: 677px;
+    width: 700px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 0;
+    font-size: $font-size-big;
+    line-height: 30px;
+  }
+
+  .reviews__author-personality {
+    font-size: $font-size-normal;
+    line-height: 30px;
+  }
+
+  .reviews__item p {
+    margin-bottom: 37px;
   }
 
   .reviews__controls {
     display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 34px;
+    background: $body-bg;
+    border: none;
+    border-bottom: 2px solid $slider-toggle-color;
+    border-left: 2px solid $slider-toggle-color;
+    vertical-align: top;
+  }
+
+  .reviews__controls--prew {
+    margin-left: 5px;
+    transform: rotate(45deg);
+  }
+
+  .reviews__controls--next {
+    margin-right: 5px;
+    transform: rotate(225deg);
   }
 
   .reviews__toggles {
