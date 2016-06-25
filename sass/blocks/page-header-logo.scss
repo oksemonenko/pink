@@ -1,9 +1,17 @@
 .page-header-logo {
   display: inline-block;
-  width: 75px;
-  height: 22px;
   margin-right: 200px;
-  padding-bottom: 20px;
+}
+
+.page-header-logo svg {
+  width: 120%;
+  transform: translate(-37%, -30%);
+}
+
+.page-header-logo__glasses,
+.page-header-logo__glasses-fill,
+.page-header-logo__stars {
+  display: none;
 }
 
 @media #{$tablet-width} {
@@ -13,6 +21,15 @@
     margin-right: 350px;
     padding-bottom: 0;
   }
+
+  .page-header-logo svg {
+    width: 100%;
+    transform: translate(-42%, -36%);
+  }
+
+  .page-header-logo__glasses-fill {
+    display: inline;
+  }
 }
 
 @media #{$desktop-width} {
@@ -20,5 +37,18 @@
     padding-top: 35px;
     padding-bottom: 30px;
     margin-right: 0;
+  }
+
+  .page-header-logo svg {
+    transform: translate(0, -15%);
+  }
+
+  .page-header-logo__glasses-fill {
+    display: none;
+  }
+
+  .page-header-logo__glasses,
+  .page-header-logo__stars {
+    display: inline;
   }
 }
