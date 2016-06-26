@@ -104,7 +104,18 @@
           Видите, как не хватает ваших?
         </p>
         <figure class="photo  photo--panorama">
-          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Прыгать или нет?">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/panorama-desktop@1x.jpg 1x,
+                        img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/panorama-tablet@1x.jpg 1x,
+                        img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg"
+                 srcset="img/panorama-mobile@2x.jpg 2x"
+                 alt="Прыгать или нет?">
+          </picture>
+          <!--<img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Прыгать или нет?">-->
           <div class="photo__description  photo__description--panorama">
             <div class="photo__author  photo__author--panorama">Анна <span class="photo__time">(5 минут назад)</span></div>
             <p class="photo__comment  photo__comment--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите
@@ -116,7 +127,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-1-desktop@1x.jpg 1x,
+                        img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-1-tablet@1x.jpg 1x,
+                        img/photo-1-tablet@2x.jpg 2x">
+            <img src="img/photo-1-mobile@1x.jpg"
+                 srcset="img/photo-1-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">-->
           <div class="photo__description">
             <div class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></div>
             <p class="photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -127,7 +149,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-2-desktop@1x.jpg 1x,
+                        img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-2-tablet@1x.jpg 1x,
+                        img/photo-2-tablet@2x.jpg 2x">
+            <img src="img/photo-2-mobile@1x.jpg"
+                 srcset="img/photo-2-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">-->
           <div class="photo__description">
             <div class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></div>
             <p class="photo__comment">Соседи будут рады!</p>
@@ -138,7 +171,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Здесь могла быть ваша цитата">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-3-desktop@1x.jpg 1x,
+                        img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-3-tablet@1x.jpg 1x,
+                        img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile@1x.jpg"
+                 srcset="img/photo-3-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Здесь могла быть ваша цитата">-->
           <div class="photo__description">
             <div class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></div>
             <p class="photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -149,7 +193,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Самая кубанская в мире!">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-4-desktop@1x.jpg 1x,
+                        img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-4-tablet@1x.jpg 1x,
+                        img/photo-4-tablet@2x.jpg 2x">
+            <img src="img/photo-4-mobile@1x.jpg"
+                 srcset="img/photo-4-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Самая кубанская в мире!">-->
           <div class="photo__description">
             <div class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></div>
             <p class="photo__comment">Самая кубанская в мире!</p>
@@ -160,7 +215,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-5-desktop@1x.jpg 1x,
+                        img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-5-tablet@1x.jpg 1x,
+                        img/photo-5-tablet@2x.jpg 2x">
+            <img src="img/photo-5-mobile@1x.jpg"
+                 srcset="img/photo-5-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">-->
           <div class="photo__description">
             <div class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></div>
             <p class="photo__comment">Где снег-то?</p>
@@ -171,7 +237,18 @@
           </div>
         </figure>
         <figure class="photo">
-          <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Всем GM и взаимные лайки!">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-6-desktop@1x.jpg 1x,
+                        img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-6-tablet@1x.jpg 1x,
+                        img/photo-6-tablet@2x.jpg 2x">
+            <img src="img/photo-6-mobile@1x.jpg"
+                 srcset="img/photo-6-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Всем GM и взаимные лайки!">-->
           <div class="photo__description">
             <div class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></div>
             <p class="photo__comment">Всем GM и взаимные лайки!</p>
@@ -186,7 +263,18 @@
         <h2 class="visually-hidden">Опубликовать свое фото</h2>
         <p class="publish-photo__description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="publish-photo__editor">
-          <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/photo-7-desktop@1x.jpg 1x,
+                        img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+                    srcset="img/photo-7-tablet@1x.jpg 1x,
+                        img/photo-7-tablet@2x.jpg 2x">
+            <img src="img/photo-7-mobile@1x.jpg"
+                 srcset="img/photo-7-mobile@2x.jpg 2x"
+                 alt="Вчера он на луну летал">
+          </picture>
+          <!--<img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">-->
           <div class="publish-photo__editor-tools">
             <div class="publish-photo__editor-controls">
               <button class="publish-photo__editor-tool  publish-photo__editor-tool--crop-photo" type="button">Обрезать</button>
