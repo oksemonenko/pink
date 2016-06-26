@@ -81,6 +81,7 @@
             c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531
             c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531
             c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z"/>
+          </svg>
         </a>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -130,9 +131,26 @@
               </li>
             </ul>
             <div class="advantages__promo-image">
-              <img class="advantages__promo-image-1" src="img/iphone-screen-mobile.png" width="157" height="320" alt="Пример работы приложения Pink">
-              <img class="advantages__promo-image-2" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример работы приложения Pink">
-              <img class="advantages__promo-image-3" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример работы приложения Pink">
+              <img src="img/iphone-screen-1-desktop@1x.png"
+                   srcset="img/iphone-screen-1-desktop@2x.png 2x"
+                   alt="Пример работы приложения Pink"
+                   class="advantages__promo-image-2">
+              <img src="img/iphone-screen-2-desktop@1x.png"
+                   srcset="img/iphone-screen-2-desktop@2x.png 2x"
+                   alt="Пример работы приложения Pink"
+                   class="advantages__promo-image-3">
+              <picture>
+                <source media="(min-width: 960px)"
+                        srcset="img/iphone-screen-3-desktop@1x.png 1x,
+                        img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)"
+                        srcset="img/iphone-screen-3-tablet@1x.png 1x,
+                        img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png"
+                     srcset="img/iphone-screen-mobile@2x.png 2x"
+                     alt="Пример работы приложения Pink"
+                     class="advantages__promo-image-1">
+              </picture>
             </div>
           </div>
         </div>
@@ -272,7 +290,13 @@
           </p>
         </div>
         <div class="map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="421" alt="Карта проезда">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 660px)"
+                    srcset="img/bg-map-tablet@1x.jpg">
+            <img src="img/bg-map-mobile.jpg" alt="Карта проезда">
+          </picture>
         </div>
         <div class="page-footer__extension">
           <a class="page-footer-logo" href="index.html">
