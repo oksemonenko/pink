@@ -8,6 +8,20 @@
   transform: translate(-37%, -30%);
 }
 
+.page-header-logo[href]:hover path {
+  fill: $footer-info-color;
+}
+
+.page-header-logo[href]:active path {
+  fill: $body-bg;
+  opacity: 0.3;
+}
+
+.page-header-logo[href]:active .page-header-logo__stars path {
+  fill: $footer-info-color;
+  opacity: 0.3;
+}
+
 .page-header-logo__glasses,
 .page-header-logo__glasses-fill,
 .page-header-logo__stars {
