@@ -40,10 +40,12 @@
   }
 
   .contest__conditions {
-    width: 487px;
-    //padding-top: 100px;
-    padding-bottom: 80px;
+    width: 500px;
+    padding-top: 0;
+    padding-bottom: 73px;
     margin: 0 auto;
+    font-size: $font-size-normal;
+    line-height: 30px;
   }
 
   .contest__conditions-request {
