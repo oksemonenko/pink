@@ -1,8 +1,15 @@
 .reviews {
+  position: relative;
   margin-top: -47px;
   padding-top: 42px;
   padding-bottom: 65px;
   background: $body-bg;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  background:  url("../img/bg-rect-white.svg") no-repeat top;
 }
 
 .reviews__item {
