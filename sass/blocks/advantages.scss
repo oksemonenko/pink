@@ -15,7 +15,8 @@
 }
 
 .advantages__promo {
-  background: $sections-bg;
+  background: $sections-bg url("../img/bg-triangle-white.svg") no-repeat top;
+  background-size: 105%;
 }
 
 .advantages__list {
@@ -47,7 +48,6 @@
 .advantages__promo-image {
   margin-top: -35px;
   padding-top: 40px;
-  background: $sections-bg;
 }
 
 .advantages__promo-image-2,
