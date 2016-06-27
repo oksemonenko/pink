@@ -2,7 +2,6 @@
   display: none;
   position: absolute;
   z-index: 10;
-  top: 1641px;
   width: 100%;
 
   box-sizing: border-box;
@@ -11,6 +10,14 @@
   box-shadow:
           0 7px 15px 0 $box-shadow-color,
           0 0 15px 0 $box-shadow-color;
+
+  &--success {
+    top: 1641px;
+  }
+
+  &--failure {
+    top: 1167px;
+  }
 }
 
 .modal-content__info {
@@ -40,4 +47,8 @@
 
 .modal-content__close {
   padding: 17px 67px;
+}
+
+.modal-content--failure .modal-content__close {
+  padding: 17px 127px;
 }
