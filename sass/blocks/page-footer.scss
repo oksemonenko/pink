@@ -69,9 +69,19 @@
   width: 27px;
   height: 34px;
   margin-left: 10px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat center;
   font-size: 0;
 
+  &:hover .page-footer__logo-htmlacademy {
+    fill: $body-color;
+  }
+
+  &:active .page-footer__logo-htmlacademy {
+    fill: $slider-toggle-color;
+  }
+}
+
+.page-footer__logo-htmlacademy {
+  fill: $footer-info-color;
 }
 
 //.page-footer__contacts {

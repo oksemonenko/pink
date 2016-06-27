@@ -6,7 +6,7 @@
           url('../img/iphone-hand-mobile@1x.png'),
           url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
-  background-position: 34% 39%, center top;
+  background-position: 34% 38%, center top;
 
   @media #{$retina} {
   background-image:
@@ -31,7 +31,7 @@
   &--nojs {
     min-height: 787px;
     padding-top: 0;
-    background-position: center 325px;
+    background-position: 34% 64%, center 325px;
   }
 }
 
@@ -78,7 +78,7 @@
     &--nojs {
       min-height: 1095px;
       padding-top: 0;
-      background-position: center 365px;
+      background-position: 50% 100%, center 365px;
     }
   }
 
