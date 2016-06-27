@@ -35,6 +35,20 @@
   text-decoration: none;
 }
 
+.page-footer__contact--mail a {
+  cursor: pointer;
+
+  &:hover {
+    color: $body-color;
+    border-bottom: 2px solid $body-color;
+  }
+
+  &:active {
+    color: $slider-toggle-color;
+    border-bottom: none;
+  }
+}
+
 .page-footer--inner-page {
   padding-top: 40px;
 }
