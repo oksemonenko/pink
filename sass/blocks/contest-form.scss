@@ -147,30 +147,34 @@
 }
 
 .contest-form__btn {
-  width: 276px;
-  padding: 17px 48px;
-  margin-bottom: 21px;
   align-self: center;
-  font-weight: $font-weight-bold;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $page-header-color;
-  background: $button-bg;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background: $button-hover-bg;
-  }
-
-  &:active {
-    color: $main-nav-down;
-  }
-
-  &:disabled {
-    background: $button-disabled-color;
-  }
 }
+
+//.contest-form__btn {
+//  width: 276px;
+//  padding: 17px 48px;
+//  margin-bottom: 21px;
+//  align-self: center;
+//  font-weight: $font-weight-bold;
+//  line-height: 30px;
+//  text-transform: uppercase;
+//  color: $page-header-color;
+//  background: $button-bg;
+//  border: none;
+//  cursor: pointer;
+//
+//  &:hover {
+//    background: $button-hover-bg;
+//  }
+//
+//  &:active {
+//    color: $main-nav-down;
+//  }
+//
+//  &:disabled {
+//    background: $button-disabled-color;
+//  }
+//}
 
 .contest-form__note {
   font-size: $font-size-small;
