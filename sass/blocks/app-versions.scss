@@ -1,5 +1,5 @@
 .app-versions {
-  @include container;
+  @include container-fluid;
   padding-top: 62px;
   padding-bottom: 43px;
   background: $sections-bg url("../img/bg-triangle-white.svg") no-repeat top;
