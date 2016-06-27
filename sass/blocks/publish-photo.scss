@@ -51,6 +51,7 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .publish-photo__editor-tool {
@@ -368,8 +369,10 @@
 
   .publish-photo__editor {
     @include container;
-    padding-left: 0;
+    padding-left: 77px;
     padding-right: 0;
+    box-sizing: border-box;
+    height: 516px;
     //width: 800px;
     //margin: 0 auto;
     //padding-right: 60px;
@@ -377,19 +380,96 @@
   }
 
   .publish-photo__editor-tools {
-    margin-right: 60px;
+    margin-right: 65px;
+  }
+
+  .publish-photo__editor-tool {
+    width: 48px;
+    height: 48px;
+  }
+
+  .publish-photo__editor-tool--crop-photo {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .publish-photo__editor-tool--change-colour-photo {
+    margin-top: 13px;
+    margin-bottom: 10px;
+
+  }
+
+  .publish-photo__editor-tool--brightness-photo {
+    margin-top: 9px;
+    margin-bottom: 13px;
+  }
+
+  .publish-photo__editor-tool--brightness-photo svg {
+    transform: translate(0);
+  }
+
+  .publish-photo__toggle--crop-photo {
+    top: 11px;
+    left: 167px;
+  }
+
+  .publish-photo__toggle--crop-photo::before {
+    top: 4px;
+    left: -72px;
+    width: 72px;
+  }
+
+  .publish-photo__toggle--crop-photo::after {
+    top: 4px;
+    left: 12px;
+    width: 203px;
+  }
+
+  .publish-photo__toggle--change-colour-photo {
+    top: 16px;
+    left: 342px;
+  }
+
+  .publish-photo__toggle--change-colour-photo::before {
+    top: 4px;
+    left: -248px;
+    width: 248px;
+  }
+
+  .publish-photo__toggle--change-colour-photo::after {
+    top: 4px;
+    left: 12px;
+    width: 27px;
+  }
+
+  .publish-photo__toggle--brightness-photo {
+    top: 15px;
+    left: 255px;
+  }
+
+  .publish-photo__toggle--brightness-photo::before {
+    top: 4px;
+    left: -161px;
+    width: 161px;
+  }
+
+  .publish-photo__toggle--brightness-photo::after {
+    top: 4px;
+    left: 12px;
+    width: 115px;
   }
 
   .publish-photo__controls {
     display: flex;
     justify-content: space-between;
-    margin-right: 60px;
-    padding-top: 120px;
+    margin-right: 50px;
+    padding-top: 148px;
   }
 
   .publish-photo__post,
   .publish-photo__cancel {
     width: 185px;
+    font-size: 16px;
   }
 
   .publish-photo__post {
