@@ -84,7 +84,17 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    outline: none;
+  }
 
+  &:hover path {
+    fill: $footer-info-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list {
@@ -203,6 +213,10 @@
   }
 
   .main-nav__item a[href] {
+    &:hover {
+      color: $page-header-color;
+    }
+
     &:hover::after {
       content: "";
       position: absolute;
@@ -215,6 +229,7 @@
 
     &:active {
       color: $main-nav-down;
+      opacity: 1;
       &:after {
         display: none;
       }

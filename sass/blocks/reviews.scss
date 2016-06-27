@@ -128,6 +128,18 @@
     border-bottom: 2px solid $slider-toggle-color;
     border-left: 2px solid $slider-toggle-color;
     vertical-align: top;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      border-bottom: 2px solid $slider-toggle-hover-color;
+      border-left: 2px solid $slider-toggle-hover-color;
+    }
+
+    &:active {
+      border-bottom: 2px solid $button-disabled-color;
+      border-left: 2px solid $button-disabled-color;
+    }
   }
 
   .reviews__controls--prew {

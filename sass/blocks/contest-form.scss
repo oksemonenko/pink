@@ -7,8 +7,20 @@
 }
 
 .contest-form input,
-.contest-form textarea{
+.contest-form textarea {
+  border-radius: 3px;
   border: 2px solid $button-disabled-color;
+}
+
+.contest-form input:hover,
+.contest-form textarea:hover {
+  border: 2px solid $body-color;
+}
+
+.contest-form input:focus,
+.contest-form textarea:focus {
+  border: 2px solid $footer-info-color;
+  outline: none;
 }
 
 .contest-form input[type="submit"] {
@@ -146,6 +158,18 @@
   background: $button-bg;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background: $button-hover-bg;
+  }
+
+  &:active {
+    color: $main-nav-down;
+  }
+
+  &:disabled {
+    background: $button-disabled-color;
+  }
 }
 
 .contest-form__note {
@@ -208,8 +232,17 @@
   width: 36px;
   height: 36px;
   border: 2px solid $button-disabled-color;
+  border-radius: 3px;
   background: $body-bg;
   cursor: pointer;
+}
+
+.contest-form__option:hover label::before {
+  border: 2px solid $body-color;
+}
+
+.contest-form__option:active label::before {
+  border: 2px solid $footer-info-color;
 }
 
 .contest-form__app-flex .contest-form__option label::before {
@@ -541,6 +574,10 @@
     margin-top: 7px;
     margin-bottom: 60px;
     padding-bottom: 0;
+  }
+
+  .contest-form__app .contest-form__option:nth-child(3) {
+    margin-left: 0;
   }
 
   .contest-form__personality {
