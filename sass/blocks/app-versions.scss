@@ -1,4 +1,5 @@
 .app-versions {
+  //@include container;
   @include container-fluid;
   padding-top: 62px;
   padding-bottom: 43px;
@@ -202,6 +203,7 @@
 
 @media #{$desktop-width} {
   .app-versions {
+    max-width: 100%;
     padding-top: 145px;
     padding-bottom: 97px;
   }

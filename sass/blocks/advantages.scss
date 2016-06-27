@@ -125,10 +125,19 @@
     //@include container;
     position: relative;
     display: block;
-    width: 310px;
     padding-top: 65px;
-    padding-left: 320px;
+    //padding-left: 320px;
     text-align: left;
+  }
+
+  .advantages__effect-wrapper {
+    @include container;
+    @include clearfix;
+  }
+
+  .advantages__effect-content {
+    float: right;
+    width: 310px;
   }
 
   .advantages__effect::before {
@@ -210,7 +219,7 @@
   }
 
   .advantages__list {
-    padding-top: 3px;
+    padding-top: 18px;
   }
 
   .advantages__item {
@@ -228,6 +237,50 @@
     font-size: $font-size-normal;
     line-height: 30px;
   }
+
+  .advantages__effect {
+    padding-top: 85px;
+      padding-bottom: 115px;
+      background: $sections-bg;
+  }
+
+  .advantages__effect-wrapper {
+    @include container;
+    @include clearfix;
+  }
+
+  .advantages__effect-content {
+    width: 525px;
+    margin-right: 50px;
+  }
+
+  .advantages__effect-title {
+    width: 298px;
+    margin-bottom: 20px;
+  }
+
+  .advantages__effect::before {
+    top: 22px;
+    left: 15%;
+    width: 298px;
+    height: 345px;
+    background-size: cover;
+    font-size: $font-size-big-decoration;
+    line-height: 380px;
+  }
+
+  .advantages__effect p {
+    margin-bottom: 35px;
+    font-size: $font-size-normal;
+    line-height: 30px;
+  }
+
+  .advantages__effect a {
+    font-size: $font-size-normal;
+    line-height: 24px;
+    color: $footer-info-color;
+  }
+
 
   //.advantages__promo-image {
   //  min-height: 305px;
@@ -269,43 +322,17 @@
   //  margin-left: 80px;
   //}
 
-  .advantages__effect {
-    width: 100%;
-    padding: 0;
-    padding-top: 85px;
-    padding-bottom: 115px;
-    background: $sections-bg;
-  }
-
-  .advantages__effect-wrapper {
-    width: 525px;
-    padding-left: 570px;
-  }
-
-  .advantages__effect-title {
-    width: 298px;
-    margin-bottom: 20px;
-  }
-
-  .advantages__effect::before {
-    top: 22px;
-    left: 15%;
-    width: 298px;
-    height: 345px;
-    background-size: cover;
-    font-size: $font-size-big-decoration;
-    line-height: 380px;
-  }
-
-  .advantages__effect p {
-    margin-bottom: 35px;
-    font-size: $font-size-normal;
-    line-height: 30px;
-  }
-
-  .advantages__effect a {
-    font-size: $font-size-normal;
-    line-height: 24px;
-    color: $footer-info-color;
-  }
+  //.advantages__effect {
+  //  width: 100%;
+  //  padding: 0;
+  //  padding-top: 85px;
+  //  padding-bottom: 115px;
+  //  background: $sections-bg;
+  //}
+  //
+  //.advantages__effect-wrapper {
+  //  width: 525px;
+  //  padding-left: 570px;
+  //}
+  //
 }

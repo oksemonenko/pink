@@ -108,7 +108,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 555px;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
   }
 
   .page-footer__contact:first-child {
@@ -159,7 +159,7 @@
 
 @media #{$desktop-width} {
   .page-footer {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 
   .page-footer__text {
@@ -173,7 +173,7 @@
     display: flex;
     justify-content: space-around;
     width: 875px;
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
 
   .page-footer__contact:nth-child(2) {
@@ -193,7 +193,7 @@
   }
 
   .page-footer__extension {
-    padding-top: 67px;
+    padding-top: 73px;
   }
 
   .page-footer__copyright {
