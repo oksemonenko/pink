@@ -1,8 +1,9 @@
 .map {
   position: relative;
   overflow:hidden;
-  padding-bottom: 48%;
-  height:0;
+  //padding-bottom: 48%;
+  padding-bottom: 202px;
+  height: 0;
 }
 
 .map::before {
@@ -36,12 +37,14 @@
 
 @media #{$tablet-width} {
   .map {
-    padding-bottom: 59%;
+    //padding-bottom: 59%;
+    padding-bottom: 380px;
   }
 }
 
 @media #{$desktop-width} {
   .map {
-    padding-bottom: 37.5%;
+    //padding-bottom: 37.5%;
+    padding-bottom: 505px;
   }
 }
