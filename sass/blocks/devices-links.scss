@@ -24,12 +24,23 @@
     width: 43px;
     height: 47px;
     background: url('../img/logo-android.svg') no-repeat;
-
   }
 
   &--windows-phone {
     width: 44px;
     height: 41px;
     background: url('../img/logo-microsoft.svg') no-repeat;
+  }
+}
+
+@media #{$tablet-width} {
+  .devices-links__link--android {
+    opacity: 0.4;
+  }
+}
+
+@media #{$desktop-width} {
+  .devices-links__link--android {
+    opacity: 1;
   }
 }

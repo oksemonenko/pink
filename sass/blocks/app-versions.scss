@@ -1,8 +1,10 @@
 .app-versions {
-  @include container;
+  //@include container;
+  @include container-fluid;
   padding-top: 62px;
   padding-bottom: 43px;
-  background: $sections-bg;
+  background: $sections-bg url("../img/bg-triangle-white.svg") no-repeat top;
+  background-size: 105%;
   overflow: hidden;
 }
 
@@ -42,6 +44,20 @@
 
 .app-versions__item-name {
   font-weight: $font-weight-bold;
+}
+
+.app-versions__item-name--hit {
+  position: relative;
+}
+
+.app-versions__item-name--hit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 73px;
+  background: url("../img/hit.png") no-repeat center;
 }
 
 .app-versions__item-price {
@@ -124,6 +140,11 @@
     padding-bottom: 7px;
   }
 
+  .app-versions__item-name--hit::before {
+    width: 60px;
+    height: 60px;
+  }
+
   .app-versions__item-option {
     padding-left: 15px;
     text-transform: none;
@@ -182,6 +203,7 @@
 
 @media #{$desktop-width} {
   .app-versions {
+    max-width: 100%;
     padding-top: 145px;
     padding-bottom: 97px;
   }
@@ -207,6 +229,11 @@
 
   .app-versions__item-name {
     font-size: $font-size-normal;
+  }
+
+  .app-versions__item-name--hit::before {
+    width: 74px;
+    height: 73px;
   }
 
   .app-versions__item-option {

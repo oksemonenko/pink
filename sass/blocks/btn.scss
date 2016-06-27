@@ -9,6 +9,35 @@
   border-radius: 100px;
   border-style: solid;
   border-width: 3px;
+  outline: none;
+
+  &--form {
+    width: 276px;
+    padding: 17px 48px;
+    margin-bottom: 21px;
+    font-weight: $font-weight-bold;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $page-header-color;
+    background: $button-bg;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      background: $button-hover-bg;
+    }
+
+    &:active {
+      color: $main-nav-down;
+    }
+
+    &:disabled {
+      background: $button-disabled-color;
+    }
+  }
 }
 
 
@@ -16,5 +45,9 @@
   .btn {
     padding: 15px 28px;
     font-size: $font-size-smaller-big;
+  }
+
+  .publish-photo .btn {
+    font-size: $font-size-normal;
   }
 }

@@ -13,6 +13,15 @@
   border-radius: 50%;
   border: 3px solid $button-disabled-color;
   font-size: 0;
+
+  &:hover {
+    border: 3px solid $body-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: 3px solid $slider-toggle-color;
+  }
 }
 
 .page-footer-social__link--tw {
@@ -21,6 +30,8 @@
 
 .page-footer-social__link--fb {
   background: url("../img/icon-facebook.svg") no-repeat center;
+
+
 }
 
 .page-footer-social__link--youtube {

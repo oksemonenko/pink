@@ -16,7 +16,7 @@
 
 @media #{$tablet-width} {
   .gallery {
-    //@include container;
+    @include container;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -41,5 +41,4 @@
     width: 600px;
     padding-bottom: 88px;
   }
-
 }

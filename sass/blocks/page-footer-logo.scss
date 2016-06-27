@@ -3,3 +3,40 @@
   margin-bottom: 40px;
   cursor: pointer;
 }
+
+.page-footer-logo__stars,
+.page-footer-logo__glasses {
+  display: none;
+}
+
+.page-footer-logo:hover path {
+  fill: $footer-info-color;
+}
+
+.page-footer-logo:active path {
+  fill: $body-color;
+  opacity: 0.3;
+}
+
+.page-footer-logo:active .page-footer-logo__stars,
+.page-footer-logo:active .page-footer-logo__stars path,
+.page-footer-logo:active .page-footer-logo__glasses-fill {
+  fill: $footer-info-color;
+  opacity: 0.3;
+}
+
+@media #{$desktop-width} {
+  .page-footer-logo__stars,
+  .page-footer-logo__glasses {
+    display: inline-block;
+  }
+
+  .page-footer-logo__glasses-fill {
+    display: none;
+  }
+
+  .page-footer-logo:active .page-footer-logo__glasses path {
+    fill: $footer-info-color;
+    opacity: 0.3;
+  }
+}

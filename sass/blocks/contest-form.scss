@@ -7,8 +7,20 @@
 }
 
 .contest-form input,
-.contest-form textarea{
+.contest-form textarea {
+  border-radius: 3px;
   border: 2px solid $button-disabled-color;
+}
+
+.contest-form input:hover,
+.contest-form textarea:hover {
+  border: 2px solid $body-color;
+}
+
+.contest-form input:focus,
+.contest-form textarea:focus {
+  border: 2px solid $footer-info-color;
+  outline: none;
 }
 
 .contest-form input[type="submit"] {
@@ -135,17 +147,7 @@
 }
 
 .contest-form__btn {
-  width: 276px;
-  padding: 17px 48px;
-  margin-bottom: 21px;
   align-self: center;
-  font-weight: $font-weight-bold;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $page-header-color;
-  background: $button-bg;
-  border: none;
-  cursor: pointer;
 }
 
 .contest-form__note {
@@ -208,8 +210,17 @@
   width: 36px;
   height: 36px;
   border: 2px solid $button-disabled-color;
+  border-radius: 3px;
   background: $body-bg;
   cursor: pointer;
+}
+
+.contest-form__option:hover label::before {
+  border: 2px solid $body-color;
+}
+
+.contest-form__option:active label::before {
+  border: 2px solid $footer-info-color;
 }
 
 .contest-form__app-flex .contest-form__option label::before {
@@ -240,13 +251,16 @@
 }
 
 @media #{$tablet-width} {
-  //.contest-form {
-  //  //@include clearfix;
-  //  //position: relative;
-  //}
+  .contest-form {
+    margin-bottom: 46px;
+  }
 
-  .contest-form fieldset {
-    margin-bottom: 60px;
+  .contest-form__personality,
+  .contest-form__app,
+  .contest-form__achievements,
+  .contest-form__contacts,
+  .contest-form__emotions {
+    margin-bottom: 57px;
     border: 2px solid #e5e5e5;
   }
 
@@ -254,9 +268,25 @@
     border: none;
   }
 
-  .contest-form legend {
+  .contest-form__title {
+    width: 370px;
+    margin-bottom: 53px;
     padding-top: 0;
     text-align: center;
+  }
+
+  .contest-form__contacts .contest-form__title {
+    width: 260px;
+  }
+
+  .contest-form__achievements .contest-form__title {
+    width: 436px;
+    margin-bottom: 52px;
+  }
+
+  .contest-form__emotions .contest-form__title {
+    width: 260px;
+    margin-bottom: 37px;
   }
 
   .contest-form__contacts legend,
@@ -270,14 +300,21 @@
 
   .contest-form__achievements,
   .contest-form__app {
+    margin-top: 0;
+    padding-bottom: 13px;
     background: $body-bg;
+  }
+
+  .contest-form__app-flex {
+    margin: 0;
   }
 
   .contest-form__question {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .contest-form__question:last-child {
@@ -286,27 +323,41 @@
 
   .contest-form__personality {
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contest-form__question:nth-of-type(1) .contest-form__text,
   .contest-form__question:nth-of-type(3) .contest-form__text {
-    width: 80%;
+    width: 85%;
   }
 
   .contest-form__question:nth-of-type(2) .contest-form__text {
-    width: 85%;
+    width: 92%;
   }
 
   .contest-form__personality {
     order: 0;
   }
 
+  .contest-form__personality label {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
   .contest-form__achievements {
     order: 3;
   }
 
+  .contest-form__achievements-flex {
+    width: 500px;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
   .contest-form__contacts {
     order: 2;
+    padding-bottom: 0;
   }
 
   .contest-form__app {
@@ -315,6 +366,8 @@
 
   .contest-form__emotions {
     order: 4;
+    padding-bottom: 5px;
+    margin-bottom: 67px;
   }
 
   .contest-form__controls {
@@ -324,16 +377,24 @@
   }
 
   .contest-form__contacts .contest-form__title {
-    margin-bottom: 0;
+    margin-bottom: 7px;
   }
 
   .contest-form__contacts-flex {
     display: flex;
     flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
   }
 
   .contest-form__contact {
     position: relative;
+    margin-bottom: 24px;
+  }
+
+  .contest-form__contact:last-child {
+    margin-bottom: 21px;
+
   }
 
   .contest-form__tel {
@@ -356,11 +417,12 @@
 
   .contest-form__contacts input,
   .contest-form__contacts input:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 11px;
   }
 
   .contest-form__option {
-    margin-left: 60px;
+    margin-left: 32px;
+    padding-left: 60px;
   }
 
   .contest-form__contact::after {
@@ -381,6 +443,26 @@
 
   .contest-form__contact:last-child::after {
     background-image: url("../img/mail.svg");
+  }
+
+  .contest-form__textarea {
+    width: 90%;
+    padding-bottom: 6px;
+    padding-left: 20px;
+  }
+
+  .contest-form__btn {
+    width: 296px;
+  }
+
+  .contest-form__note {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .contest-form__note sup {
+    top: 0;
+    font-size: 100%;
   }
 
   //
@@ -432,10 +514,6 @@
   //  width: 496px;
   //}
   //
-  //.contest-form__btn {
-  //  float: left;
-  //}
-  //
   //.contest-form__note {
   //  float: right;
   //}
@@ -459,6 +537,10 @@
     align-items: center;
   }
 
+  .contest-form__app .contest-form__title {
+    margin-bottom: 24px;
+  }
+
   .contest-form__personality,
   .contest-form__app {
     width: 431px;
@@ -467,12 +549,26 @@
   }
 
   .contest-form__app {
+    margin-top: 7px;
+    margin-bottom: 60px;
     padding-bottom: 0;
+  }
+
+  .contest-form__app .contest-form__option:nth-child(3) {
+    margin-left: 0;
   }
 
   .contest-form__personality {
     margin-right: 74px;
   }
+
+  .contest-form__personality-flex {
+    margin-top: 20px;
+  }
+
+  //.contest-form__question {
+  //  margin-bottom: 0;
+  //}
 
   .contest-form__contacts,
   .contest-form__achievements,
@@ -481,17 +577,29 @@
     width: 936px;
   }
 
+  .contest-form__contacts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .contest-form__contacts-flex {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    width: auto;
+    margin: 0 48px;
     //padding-left: 40px;
     //padding-right: 40px;
   }
 
+  .contest-form__contacts .contest-form__title {
+    margin-bottom: 5px;
+  }
+
   .contest-form__tel {
     order: 0;
-    width: 371px;
+    width: 376px;
     margin-right: 74px;
   }
 
@@ -516,7 +624,11 @@
 
   .contest-form__contacts input,
   .contest-form__contacts input:last-child {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contest-form__contacts label {
+    margin-bottom: -10px;
   }
 
   .contest-form__achievements {
@@ -524,31 +636,47 @@
   }
 
   .contest-form__achievements-flex {
+    width: 820px;
     flex-wrap: wrap;
     justify-content: space-around;
     height: 180px;
-    margin: 0;
+    margin: 0 auto;
     //padding-left: 40px;
     //padding-right: 40px;
   }
 
+  .contest-form__achievements .contest-form__title {
+    margin-bottom: 45px;
+  }
+
   .contest-form__option {
-    width: 260px;
+    //width: 260px;
     margin-left: 0;
     text-align: left;
+  }
+
+  .contest-form__option:nth-child(2n+1) {
+    margin-bottom: 40px;
   }
 
   .contest-form__option:last-child {
     margin-bottom: 60px;
   }
 
+  .contest-form__option:nth-child(3),
+  .contest-form__option:nth-child(4),
+  .contest-form__option:nth-child(5),
+  .contest-form__option:nth-child(6) {
+    margin-left: 60px;
+  }
+
   .contest-form__question:nth-of-type(1) .contest-form__text,
   .contest-form__question:nth-of-type(3) .contest-form__text {
-    width: 75%;
+    width: 78%;
   }
 
   .contest-form__question:nth-of-type(2) .contest-form__text {
-    width: 80%;
+    width: 87%;
   }
 
   .contest-form__app-flex {
@@ -557,22 +685,33 @@
   }
 
   .contest-form__contact:first-child::after {
-    right: 78px;
+    right: 76px;
   }
 
   .contest-form__contact:last-child::after {
     right: 11px;
   }
 
-  //.contest-form__tel::after,
-  //.contest-form__email::after {
-  //  right: -20px;
-  //}
-
   .contest-form__note-text {
     display: inline;
   }
 
+  .contest-form__emotions {
+    margin-bottom: 64px;
+    padding-bottom: 0;
+  }
+
+  .contest-form textarea {
+    height: 126px;
+  }
+
+  .contest-form__emotions .contest-form__title {
+    margin-bottom: 33px;
+  }
+  //.contest-form__tel::after,
+  //.contest-form__email::after {
+  //  right: -20px;
+  //}
   //.contest-form__option:nth-child(3) {
   //  order: 1;
   //}

@@ -1,7 +1,7 @@
 .page-header {
   min-height: 22px;
   padding: 22px 20px;
-  padding-bottom: 0;
+  padding-bottom: 7px;
   margin-top: 5px;
   color: $page-header-color;
   background: $page-header-min-bg;
@@ -12,6 +12,7 @@
 
   &--nojs {
     margin-top: 0;
+    padding-bottom: 0;
     background: $main-nav-bg;
   }
 }

@@ -28,6 +28,15 @@
   margin-bottom: 34px;
   color: $page-header-color;
   border-color: $body-bg;
+
+  &:hover {
+    background: $body-bg;
+    color: $footer-info-color;
+  }
+
+  &:active {
+    color: $button-active-color;
+  }
 }
 
 .download__info {

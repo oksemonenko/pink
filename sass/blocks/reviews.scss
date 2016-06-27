@@ -1,8 +1,15 @@
 .reviews {
+  position: relative;
   margin-top: -47px;
   padding-top: 42px;
   padding-bottom: 65px;
   background: $body-bg;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  background:  url("../img/bg-rect-white.svg") no-repeat top;
 }
 
 .reviews__item {
@@ -91,7 +98,7 @@
     left: 435px;
     width: 79px;
     height: 63px;
-    background: url("../img/quotes.svg") no-repeat center;
+    background: url("../img/icon-quotes.svg") no-repeat center;
   }
 
   .reviews__list {
@@ -128,6 +135,18 @@
     border-bottom: 2px solid $slider-toggle-color;
     border-left: 2px solid $slider-toggle-color;
     vertical-align: top;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      border-bottom: 2px solid $slider-toggle-hover-color;
+      border-left: 2px solid $slider-toggle-hover-color;
+    }
+
+    &:active {
+      border-bottom: 2px solid $button-disabled-color;
+      border-left: 2px solid $button-disabled-color;
+    }
   }
 
   .reviews__controls--prew {
