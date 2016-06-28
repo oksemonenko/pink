@@ -8,13 +8,6 @@
   overflow: hidden;
 }
 
-//.app-versions__list,
-//.app-versions__item-options {
-//  margin: 0;
-//  padding: 0;
-//  list-style: none;
-//}
-
 .app-versions__list {
   width: 262%;
   margin: 0 auto;
@@ -67,7 +60,6 @@
 }
 
 .app-versions__row {
-  //font-size: 0;
   text-align: left;
 }
 
@@ -124,7 +116,6 @@
   }
 
   .app-versions__list {
-    //@include container;
     width: 620px;
     transform: translateX(0);
   }
@@ -253,5 +244,4 @@
     right: 44%;
     top: 30%;
   }
-
 }

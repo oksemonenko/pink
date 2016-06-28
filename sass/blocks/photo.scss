@@ -89,11 +89,9 @@
 
 @media #{$tablet-width} {
   .photo {
-    //display: inline-block;
     width: 300px;
     margin-right: 0;
     margin-left: 0;
-    //vertical-align: top;
   }
 
   .photo img {
@@ -188,7 +186,6 @@
   }
 
   .photo__comment {
-    //margin-top: -28px;
     margin-bottom: 0;
   }
 }

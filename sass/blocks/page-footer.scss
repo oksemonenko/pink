@@ -12,7 +12,6 @@
 }
 
 .page-footer__contacts {
-  //position: relative;
   width: 280px;
   margin: 0 auto;
 }
@@ -85,19 +84,6 @@
   fill: $footer-info-color;
 }
 
-//.page-footer__contacts {
-//  position: relative;
-//}
-//.page-footer__contacts::after {
-//  content: '';
-//  position: absolute;
-//  left: 0;
-//  width: 595px;
-//  height: 62px;
-//  background: url("../img/icons/bg-triangle-white-footer.svg") no-repeat center;
-//  z-index: 10;
-//}
-
 .page-footer__extension {
   display: none;
 }
@@ -119,13 +105,6 @@
     margin: 0 auto;
     margin-top: 30px;
   }
-  //.page-footer__contact {
-  //  display: inline-block;
-  //  vertical-align: top;
-  //  width: 230px;
-  //  padding-left: 45px;
-  //  padding-right: 45px;
-  //}
 
   .page-footer__text {
     margin-top: 46px;

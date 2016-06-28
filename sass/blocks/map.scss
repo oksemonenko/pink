@@ -1,7 +1,6 @@
 .map {
   position: relative;
   overflow: hidden;
-  //padding-bottom: 48%;
   padding-bottom: 202px;
   height: 0;
 }
@@ -26,26 +25,14 @@
   width: 100%;
 }
 
-//.map::after {
-//  content: '';
-//  position: absolute;
-//  bottom: 20%;
-//  left: 50%;
-//  width: 36px;
-//  height: 36px;
-//  background: url("../img/icons/icon-map-marker.svg") no-repeat center;
-//}
-
 @media #{$tablet-width} {
   .map {
-    //padding-bottom: 59%;
     padding-bottom: 380px;
   }
 }
 
 @media #{$desktop-width} {
   .map {
-    //padding-bottom: 37.5%;
     padding-bottom: 505px;
   }
 }
