@@ -90,8 +90,8 @@ gulp.task("serve", function() {
     notify: false,
     open: true,
     ui: false
-  });
-    
+});
+
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
