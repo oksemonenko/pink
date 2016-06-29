@@ -27,6 +27,10 @@
   border: none;
 }
 
+.contest-form label {
+  cursor: pointer;
+}
+
 .contest-form__title {
   width: 220px;
   padding-top: 110px;
@@ -560,9 +564,9 @@
 
   .contest-form__achievements-flex {
     width: 820px;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 180px;
+    justify-content: space-between;
     margin: 0 auto;
   }
 
@@ -583,11 +587,8 @@
     margin-bottom: 60px;
   }
 
-  .contest-form__option:nth-child(3),
-  .contest-form__option:nth-child(4),
-  .contest-form__option:nth-child(5),
   .contest-form__option:nth-child(6) {
-    margin-left: 60px;
+    margin-right: 30px;
   }
 
   .contest-form__question:nth-of-type(1) .contest-form__text,
