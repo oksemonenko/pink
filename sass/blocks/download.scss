@@ -7,8 +7,6 @@
 }
 
 .download__wrapper {
-  //@include container;
-  //min-height: 200px;
   width: 282px;
   margin: 0 auto;
   padding-left: 19px;
@@ -51,14 +49,10 @@
     @include clearfix;
     padding: 0;
     margin-top: 0;
-    //position: absolute;
-    //top: 0;
-    //left: 0;
   }
 
   .download__wrapper {
     float: left;
-    //margin-left: 15px;
     padding: 80px 0;
     width: 300px;
     min-height: 400px;
@@ -91,7 +85,6 @@
 @media #{$desktop-width} {
   .download__wrapper {
     min-height: 500px;
-    //margin-left: 10px;
     padding: 110px 0;
     padding-bottom: 96px;
   }

@@ -1,16 +1,3 @@
-.contest {
-  //margin-top: -350px;
-  //padding-top: 60px;
-}
-
-//.contest__title {
-//  margin: 0;
-//  margin-bottom: 85px;
-//  font-size: $font-size-big;
-//  font-weight: $font-weight-light;
-//  color: $page-header-color;
-//}
-
 .contest__conditions {
   width: 280px;
   margin: 0 auto;
@@ -28,7 +15,6 @@
 @media #{$tablet-width} {
   .contest {
     @include container-fluid;
-    //margin-top: -500px;
     padding-top: 60px;
   }
   .contest__title {

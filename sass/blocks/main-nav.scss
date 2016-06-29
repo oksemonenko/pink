@@ -1,20 +1,10 @@
 .main-nav {
   position: relative;
   width: 50px;
-  //min-height: 24px;
   margin: 0 auto;
-  //line-height: 32px;
   font-weight: $font-weight-bold;
   color: $page-header-color;
   background: $main-nav-bg;
-
-  //&--closed {
-  //  margin-left: 135px;
-  //  display: inline-block;
-  //  vertical-align: top;
-  //  font-size: 0;
-  //  background: $page-header-min-bg;
-  //}
 
   &--closed .main-nav__toggle {
     right: -110px;
@@ -39,7 +29,6 @@
   }
 
   &--opened .main-nav__toggle {
-    //right: 20px;
     left: 73%;
     height: 23px;
     padding-left: 13px;
@@ -135,10 +124,6 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    //display: none;
-  }
-
   .main-nav--nojs .main-nav__list {
     display: block;
   }
@@ -162,7 +147,6 @@
     }
 
     &--opened .main-nav__toggle {
-      //right: 20px;
       left: 90%;
     }
 
@@ -174,8 +158,6 @@
 
 @media #{$desktop-width} {
   .main-nav {
-    //float: right;
-    //width: auto;
     width: 620px;
     margin: 0;
     background: transparent;

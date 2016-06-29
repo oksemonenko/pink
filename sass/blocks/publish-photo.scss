@@ -71,25 +71,8 @@
   }
 }
 
-
-
-.publish-photo__editor-tool--crop-photo {
-  //width: 44px;
-  //height: 44px;
-  //background: url("../img/icons/icon-editor-crop.svg") no-repeat center;
-}
-
-.publish-photo__editor-tool--change-colour-photo {
-  //width: 48px;
-  //height: 43px;
-  //background: url("../img/icons/icon-editor-fill.svg") no-repeat center;
-}
-
 .publish-photo__editor-tool--brightness-photo {
-  //width: 32px;
-  //height: 32px;
   margin-right: 0;
-  //background: url("../img/icons/icon-editor-contrast.svg") no-repeat center;
 }
 
 .publish-photo__toggle--change-colour-photo,
@@ -179,10 +162,6 @@
 }
 
 @media #{$tablet-width} {
-  .publish-photo {
-    //@include container;
-  }
-
   .publish-photo__description {
     width: 430px;
     padding-top: 45px;
@@ -191,7 +170,6 @@
   }
 
   .publish-photo__editor {
-    //@include clearfix;
     @include container;
     padding-right: 10px;
     padding-left: 10px;
@@ -209,7 +187,6 @@
   .publish-photo__editor-tools {
     display: flex;
     flex-direction: column;
-    //flex-wrap: wrap;
     justify-content: space-between;
     height: 200px;
     margin-bottom: 0;
@@ -219,7 +196,6 @@
     display: flex;
     margin-left: 20px;
     border-bottom: 1px solid $button-disabled-color;
-    //justify-content: space-between;
   }
 
   .publish-photo__editor-tool {
@@ -251,7 +227,6 @@
   }
 
   .publish-photo__toggle {
-    //position: static;
     top: 10px;
     left: 250px;
     margin-top: 3px;
@@ -329,36 +304,6 @@
   .publish-photo__post {
     margin-bottom: 24px;
   }
-
-  //.publish-photo__toggle::before {
-  //  content: "";
-  //  position: absolute;
-  //  top: 4px;
-  //  left: -193px;
-  //  width: 192px;
-  //  height: 2px;
-  //  background: $main-nav-bg;
-  //  cursor: pointer;
-  //}
-  //
-  //.publish-photo__toggle::after {
-  //  content: "";
-  //  position: absolute;
-  //  top: 4px;
-  //  left: 12px;
-  //  width: 33px;
-  //  height: 2px;
-  //  background: $main-nav-bg;
-  //  cursor: pointer;
-  //}
-
-  //.publish-photo__editor img {
-  //  float: left;
-  //}
-  //
-  //.publish-photo__editor-tools button {
-  //  display: block;
-  //}
 }
 
 @media #{$desktop-width} {
@@ -373,10 +318,6 @@
     padding-right: 0;
     box-sizing: border-box;
     height: 516px;
-    //width: 800px;
-    //margin: 0 auto;
-    //padding-right: 60px;
-    //padding-left: 80px;
   }
 
   .publish-photo__editor-tools {
