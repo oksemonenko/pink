@@ -566,11 +566,38 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
   }
 
   .contest-form__achievements .contest-form__title {
     margin-bottom: 45px;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(1){
+    order: 1;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(2){
+    order: 4;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(3){
+    order: 2;
+    margin-right: 25px;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(4){
+    order: 5;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(5){
+    order: 3;
+    margin-right: 5px;
+  }
+
+  .contest-form__achievements .contest-form__option:nth-child(6){
+    order: 6;
   }
 
   .contest-form__option {
@@ -586,9 +613,9 @@
     margin-bottom: 60px;
   }
 
-  .contest-form__option:nth-child(6) {
-    margin-right: 30px;
-  }
+  //.contest-form__option:nth-child(6) {
+  //  margin-right: 30px;
+  //}
 
   .contest-form__question:nth-of-type(1) .contest-form__text,
   .contest-form__question:nth-of-type(3) .contest-form__text {
